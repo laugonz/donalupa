@@ -1,0 +1,12 @@
+:root { --paper:#F7F0DB; --ink:#3E210F; --soft:#7A5E48; --gold:#E85423; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Fredoka', system-ui, -apple-system, sans-serif; line-height:1.6; }
+main { max-width:680px; margin:0 auto; padding:48px 24px 80px; }
+h1 { font-size:2rem; margin:0 0 4px; }
+h2 { font-size:1.2rem; margin:2.2em 0 .4em; }
+.tag { color:var(--soft); font-style:italic; margin:0 0 28px; }
+.bar { width:120px; height:12px; background:var(--gold); border-radius:8px; margin:18px 0 30px; }
+a { color:var(--gold); font-weight:600; }
+.lang { color:var(--soft); font-size:.85rem; text-transform:uppercase; letter-spacing:.08em; margin-top:3em; }
+footer { color:var(--soft); font-size:.85rem; margin-top:60px; }
