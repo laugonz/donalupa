@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detectives y lógica: método sin adivinar | Doña Lupa</title>
+  <meta name="description" content="Resuelve juegos de detectives y lógica con un método repetible: anota pistas, propaga restricciones, revisa intersecciones y evita adivinar.">
+  <meta name="theme-color" content="#f4ecd7">
+  <meta name="apple-itunes-app" content="app-id=6801481670">
+  <link rel="canonical" href="https://donalupa.com/es/guias/juegos-de-detectives-y-logica/">
+  <link rel="alternate" hreflang="en" href="https://donalupa.com/guides/detective-logic-grid-puzzles/">
+  <link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/juegos-de-detectives-y-logica/">
+  <link rel="alternate" hreflang="x-default" href="https://donalupa.com/guides/detective-logic-grid-puzzles/">
+  <link rel="icon" href="/assets/app-icon.png">
+  <link rel="stylesheet" href="/_style.css?v=20260826-4">
+  <link rel="preload" as="image" href="/assets/guides/juegos-de-detectives-y-logica-feature.webp" fetchpriority="high">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Doña Lupa">
+  <meta property="og:title" content="Juegos de detectives y lógica: método sin adivinar">
+  <meta property="og:description" content="Un ciclo práctico para convertir pistas narrativas en colocaciones obligatorias.">
+  <meta property="og:url" content="https://donalupa.com/es/guias/juegos-de-detectives-y-logica/">
+  <meta property="og:image" content="https://donalupa.com/assets/guides/juegos-de-detectives-y-logica-feature.webp">
+  <meta property="og:image:alt" content="Juego de detectives y lógica con tarjetas de pistas, sospechosos y candidatos marcados">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juegos de detectives y lógica: método sin adivinar">
+  <meta name="twitter:description" content="Convierte las pistas del caso en deducciones limpias y comprobables.">
+  <meta name="twitter:image" content="https://donalupa.com/assets/guides/juegos-de-detectives-y-logica-feature.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Juegos de detectives y lógica: método sin adivinar",
+        "description": "Un método repetible para anotar pistas, propagar restricciones y resolver juegos de detectives y lógica sin probar al azar.",
+        "image": "https://donalupa.com/assets/guides/juegos-de-detectives-y-logica-feature.webp",
+        "datePublished": "2026-08-26",
+        "dateModified": "2026-08-26",
+        "inLanguage": "es",
+        "author": {"@type": "Person", "name": "Laura González"},
+        "publisher": {"@type": "Organization", "name": "Doña Lupa", "logo": {"@type": "ImageObject", "url": "https://donalupa.com/assets/app-icon.png"}},
+        "mainEntityOfPage": "https://donalupa.com/es/guias/juegos-de-detectives-y-logica/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Doña Lupa", "item": "https://donalupa.com/es/"},
+          {"@type": "ListItem", "position": 2, "name": "Guías", "item": "https://donalupa.com/es/#guias"},
+          {"@type": "ListItem", "position": 3, "name": "Juegos de detectives y lógica", "item": "https://donalupa.com/es/guias/juegos-de-detectives-y-logica/"}
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "Cómo resolver un juego de detectives y lógica sin adivinar",
+        "description": "Un ciclo de cinco pasos para convertir pistas en deducciones comprobables.",
+        "totalTime": "PT15M",
+        "step": [
+          {"@type": "HowToStep", "position": 1, "name": "Dibuja el mapa del tablero", "text": "Identifica filas, columnas y zonas y observa qué sospechosos ya están colocados."},
+          {"@type": "HowToStep", "position": 2, "name": "Anota los hechos directos", "text": "Aplica las pistas positivas y marca todos los imposibles explícitos."},
+          {"@type": "HowToStep", "position": 3, "name": "Propaga cada colocación", "text": "Elimina el sospechoso colocado del resto de su fila, columna y zona."},
+          {"@type": "HowToStep", "position": 4, "name": "Revisa un sospechoso cada vez", "text": "Busca el único lugar donde un personaje todavía puede aparecer dentro de un grupo."},
+          {"@type": "HowToStep", "position": 5, "name": "Comprueba la solución", "text": "Verifica todas las pistas y reglas de no repetición antes de revelar al culpable."}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "¿Qué hago si no veo el siguiente movimiento en una cuadrícula lógica?", "acceptedAnswer": {"@type": "Answer", "text": "Elige un sospechoso y revisa todas sus casillas posibles en cada fila, columna y zona. Después relee las pistas relacionales usando solo los candidatos que quedan."}},
+          {"@type": "Question", "name": "¿Es necesario tomar notas en los juegos de detectives?", "acceptedAnswer": {"@type": "Answer", "text": "En tableros pequeños no es obligatorio, pero marcar los imposibles reduce el esfuerzo de memoria y permite ver con claridad las posiciones únicas y las intersecciones."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="guide-page">
+  <a class="skip-link" href="#article">Saltar a la guía</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/es/" aria-label="Inicio de Doña Lupa"><img src="/assets/app-icon.png" width="44" height="44" alt=""><span>Doña Lupa</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="/es/#como">Cómo funciona</a>
+        <a href="/es/#casos">Casos</a>
+        <a href="/es/#guias">Guías</a>
+        <a class="language-link" href="/guides/detective-logic-grid-puzzles/" lang="en" hreflang="en">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="article">
+    <article>
+      <header class="guide-hero container">
+        <nav class="breadcrumbs" aria-label="Migas de pan"><a href="/es/">Doña Lupa</a><span aria-hidden="true">/</span><a href="/es/#guias">Guías</a><span aria-hidden="true">/</span><span>Detectives y lógica</span></nav>
+        <p class="eyebrow">Cuaderno de detective</p>
+        <h1>Cómo resolver juegos de detectives y lógica</h1>
+        <p class="guide-deck"><strong>Utiliza un ciclo sencillo: anota una pista, elimina todo lo que prohíbe, coloca lo que haya quedado forzado y vuelve a revisar las filas, columnas y zonas que han cambiado.</strong> Repetir ese ciclo transforma una cuadrícula abarrotada en decisiones pequeñas que puedes comprobar.</p>
+        <figure class="guide-feature">
+          <img src="/assets/guides/juegos-de-detectives-y-logica-feature.webp" width="1536" height="1024" fetchpriority="high" alt="Juegos de detectives y lógica con retratos de sospechosos, pistas y marcas de deducción">
+          <figcaption>Una buena detective guarda menos posibilidades en la cabeza y más sobre el tablero.</figcaption>
+        </figure>
+      </header>
+
+      <div class="guide-layout container">
+        <aside class="key-points" aria-label="Ciclo de resolución">
+          <p class="eyebrow">El ciclo de cinco pasos</p>
+          <ol>
+            <li>Localiza los grupos</li>
+            <li>Anota hechos directos</li>
+            <li>Propaga colocaciones</li>
+            <li>Revisa un personaje</li>
+            <li>Comprueba las pistas</li>
+          </ol>
+        </aside>
+
+        <div class="guide-body">
+          <h2>Convierte la historia en hechos del tablero</h2>
+          <p>El lenguaje detectivesco crea ambiente, pero el primer trabajo es concreto: traducir cada frase a algo que la cuadrícula pueda mostrar. «La directora no estaba junto al tupper» elimina posiciones. «El huésped compartía zona con el botones» relaciona candidatos. «La becaria estaba en la última columna» produce una colocación o una lista corta de casillas.</p>
+          <p>No intentes resolver de cabeza toda la frase. Marca lo que ya sea seguro y deja disponible el resto. Una pista relacional puede aportar muy poco al principio y volverse definitiva cuando uno de sus personajes conserve solo dos posiciones posibles.</p>
+
+          <figure class="article-shot">
+            <img src="/assets/es-gameplay.jpg" width="630" height="1369" loading="lazy" alt="Cuadrícula lógica detectivesca de Doña Lupa con notas y casillas descartadas">
+            <figcaption>Las cruces también son pruebas: cada imposible estrecha tres grupos que se solapan.</figcaption>
+          </figure>
+
+          <h2>Un método de cinco pasadas para cualquier caso</h2>
+          <h3>Pasada 1: localiza filas, columnas y zonas</h3>
+          <p>Sigue los contornos gruesos de las zonas y cuenta sus casillas. En un tablero de seis sospechosos, todos deben aparecer una vez en cada fila, columna y zona. Presta atención a las formas dobladas: una colocación que parece legal en la fila todavía puede repetir personaje dentro de una zona.</p>
+          <h3>Pasada 2: registra positivos y negativos directos</h3>
+          <p>Empieza por las pistas que fijan una ubicación o la descartan. Los datos negativos son tan valiosos como los positivos. Cuatro cruces en un grupo de seis dejan dos candidatos, y otra regla del tablero puede eliminar uno sin necesidad de una pista nueva.</p>
+          <h3>Pasada 3: propaga de inmediato</h3>
+          <p>Después de colocar un sospechoso, recorre su fila, su columna y su zona. Elimina ese personaje de todas las demás casillas de los tres grupos. Aplazar esta tarea oculta las reacciones en cadena que hacen avanzar el caso.</p>
+          <h3>Pasada 4: invierte la pregunta</h3>
+          <p>Si ninguna casilla tiene un único candidato, deja de preguntar qué personaje cabe en una casilla. Elige un sospechoso y busca dónde puede aparecer en un grupo. Cuando solo queda un lugar, la colocación es obligatoria aunque esa casilla todavía mostrase varios candidatos.</p>
+          <h3>Pasada 5: relee y comprueba</h3>
+          <p>Vuelve a las pistas no utilizadas cada vez que cambie el tablero. Antes del desenlace, confirma que cada grupo contiene a todos los sospechosos una vez y que las posiciones cumplen cada frase. Una contradicción no es tiempo perdido: señala la primera colocación que se hizo sin pruebas suficientes.</p>
+
+          <div class="article-cta">
+            <div><p class="eyebrow">Practica el ciclo</p><h2>En Doña Lupa todas las pistas son verdad. Las coartadas ya veremos.</h2></div>
+            <a class="button button-primary" href="https://apps.apple.com/es/app/id6801481670">Resolver un caso gratis <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <h2>Dos patrones que merece la pena reconocer</h2>
+          <p><strong>La posición única oculta:</strong> un sospechoso solo puede ocupar una casilla dentro de un grupo, aunque esa casilla admita varios personajes. Cuando te atasques, revisa en los dos sentidos: de casilla a sospechoso y de sospechoso a casilla.</p>
+          <p><strong>La intersección bloqueada:</strong> dentro de una zona, todas las posiciones posibles de un personaje quedan en la misma fila o columna. Ese personaje no puede aparecer en el resto de esa fila o columna fuera de la zona. No es un truco: es la consecuencia de combinar dos reglas de no repetición.</p>
+
+          <figure class="article-shot article-shot-wide">
+            <img src="/assets/es-case-packs.jpg" width="630" height="1369" loading="lazy" alt="Casos detectivescos de Doña Lupa organizados por mundo y dificultad">
+            <figcaption>Los casos sencillos permiten practicar el método antes de que las pistas empiecen a entrelazarse.</figcaption>
+          </figure>
+
+          <h2>Qué no hacer cuando te atascas</h2>
+          <ul>
+            <li><strong>No borres todos los candidatos:</strong> conserva los descartes confirmados; son el registro de tu razonamiento.</li>
+            <li><strong>No elijas por la cara de culpable:</strong> las ilustraciones cuentan la historia, pero no resuelven el tablero.</li>
+            <li><strong>No fuerces una elección entre dos:</strong> revisa los otros grupos de esas casillas y mantén ambas opciones hasta poder descartar una.</li>
+          </ul>
+          <p>Si las reglas del tablero todavía resultan nuevas, consulta <a href="/es/guias/como-jugar-sudoku-de-misterio/">cómo jugar a un sudoku de misterio</a>. Para entender la parte narrativa, descubre qué hace justo a un <a href="/es/guias/puzles-de-misterio-y-logica/">puzle de misterio y lógica</a>.</p>
+
+          <section class="article-faq" aria-labelledby="guide-faq-title">
+            <p class="eyebrow">Respuestas rápidas</p>
+            <h2 id="guide-faq-title">Dudas al cruzar pistas</h2>
+            <details><summary>¿Qué hago si no veo el siguiente movimiento en una cuadrícula lógica?</summary><p>Elige un sospechoso y revisa todas sus casillas posibles en cada fila, columna y zona. Después relee las pistas relacionales usando solo los candidatos que quedan.</p></details>
+            <details><summary>¿Es necesario tomar notas en los juegos de detectives?</summary><p>En tableros pequeños no es obligatorio, pero marcar los imposibles reduce el esfuerzo de memoria y permite ver con claridad las posiciones únicas y las intersecciones.</p></details>
+          </section>
+        </div>
+      </div>
+
+      <section class="related-guides container" aria-labelledby="related-title">
+        <p class="eyebrow">Sigue investigando</p>
+        <h2 id="related-title">Guías de lógica relacionadas</h2>
+        <div class="related-grid">
+          <a href="/es/guias/como-jugar-sudoku-de-misterio/"><span>Reglas para empezar</span><strong>Filas, columnas y zonas explicadas</strong><small>Leer la guía →</small></a>
+          <a href="/es/guias/puzles-de-misterio-y-logica/"><span>Guía del género</span><strong>Por qué un misterio justo tiene una respuesta</strong><small>Leer la guía →</small></a>
+        </div>
+      </section>
+    </article>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <img src="/assets/app-icon.png" width="112" height="112" alt="Icono de Doña Lupa">
+        <div><p class="eyebrow">El tablero no olvida nada</p><h2>Cruza las pistas. Pilla al culpable.</h2></div>
+        <a class="button button-primary" href="https://apps.apple.com/es/app/id6801481670">Jugar gratis en iPhone <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="/es/"><img src="/assets/app-icon.png" width="36" height="36" alt="">Doña Lupa</a>
+      <p>Crímenes acogedores, pistas honestas, coartadas terribles.</p>
+      <nav aria-label="Enlaces del pie"><a href="/es/#guias">Guías</a><a href="/privacy/">Privacidad</a><a href="/support/">Soporte</a><a href="/guides/detective-logic-grid-puzzles/" lang="en">English</a></nav>
+      <small>© 2026 Laura González</small>
+    </div>
+  </footer>
+</body>
+</html>

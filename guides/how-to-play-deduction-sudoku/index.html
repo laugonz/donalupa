@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Play Deduction Sudoku: Rules and First Case | Doña Lupa</title>
+  <meta name="description" content="Learn how to play deduction sudoku: place one suspect in every row, column and zone, combine truthful clues, and solve your first mystery step by step.">
+  <meta name="theme-color" content="#f4ecd7">
+  <meta name="apple-itunes-app" content="app-id=6801481670">
+  <link rel="canonical" href="https://donalupa.com/guides/how-to-play-deduction-sudoku/">
+  <link rel="alternate" hreflang="en" href="https://donalupa.com/guides/how-to-play-deduction-sudoku/">
+  <link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/como-jugar-sudoku-de-misterio/">
+  <link rel="alternate" hreflang="x-default" href="https://donalupa.com/guides/how-to-play-deduction-sudoku/">
+  <link rel="icon" href="/assets/app-icon.png">
+  <link rel="stylesheet" href="/_style.css?v=20260826-4">
+  <link rel="preload" as="image" href="/assets/guides/how-to-play-deduction-sudoku-feature.webp" fetchpriority="high">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Doña Lupa">
+  <meta property="og:title" content="How to Play Deduction Sudoku: Rules and First Case">
+  <meta property="og:description" content="The board rules, clue types and solving order you need for your first deduction sudoku mystery.">
+  <meta property="og:url" content="https://donalupa.com/guides/how-to-play-deduction-sudoku/">
+  <meta property="og:image" content="https://donalupa.com/assets/guides/how-to-play-deduction-sudoku-feature.webp">
+  <meta property="og:image:alt" content="Illustrated deduction-sudoku case file with suspects arranged around a logic board">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Play Deduction Sudoku: Rules and First Case">
+  <meta name="twitter:description" content="Learn the board rules and solve your first suspect-filled mystery.">
+  <meta name="twitter:image" content="https://donalupa.com/assets/guides/how-to-play-deduction-sudoku-feature.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to Play Deduction Sudoku: Rules and First Case",
+        "description": "Learn how to play deduction sudoku by placing one suspect in every row, column and zone and combining truthful clues.",
+        "image": "https://donalupa.com/assets/guides/how-to-play-deduction-sudoku-feature.webp",
+        "datePublished": "2026-08-26",
+        "dateModified": "2026-08-26",
+        "inLanguage": "en",
+        "author": {"@type": "Person", "name": "Laura González"},
+        "publisher": {"@type": "Organization", "name": "Doña Lupa", "logo": {"@type": "ImageObject", "url": "https://donalupa.com/assets/app-icon.png"}},
+        "mainEntityOfPage": "https://donalupa.com/guides/how-to-play-deduction-sudoku/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Doña Lupa", "item": "https://donalupa.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://donalupa.com/#guides"},
+          {"@type": "ListItem", "position": 3, "name": "How to Play Deduction Sudoku", "item": "https://donalupa.com/guides/how-to-play-deduction-sudoku/"}
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to solve a deduction sudoku case",
+        "description": "A reliable order for solving a suspect-based deduction sudoku puzzle.",
+        "totalTime": "PT10M",
+        "step": [
+          {"@type": "HowToStep", "position": 1, "name": "Read the case and scan the grid", "text": "Identify the suspects, the row, column and zone shapes, and any placements already given."},
+          {"@type": "HowToStep", "position": 2, "name": "Apply direct clues", "text": "Place anything a clue identifies with certainty and mark cells ruled out by a negative clue."},
+          {"@type": "HowToStep", "position": 3, "name": "Propagate the board rules", "text": "After every placement, remove that suspect from the rest of the same row, column and zone."},
+          {"@type": "HowToStep", "position": 4, "name": "Repeat until one solution remains", "text": "Alternate clues and board constraints until every suspect has one valid cell."}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Do I need to know number sudoku before I play?", "acceptedAnswer": {"@type": "Answer", "text": "No. This format uses one-per-row, one-per-column and one-per-zone constraints, but Doña Lupa teaches them with illustrated suspects and an interactive first case."}},
+          {"@type": "Question", "name": "Should I guess when two suspects still fit?", "acceptedAnswer": {"@type": "Answer", "text": "Usually no. Leave both possibilities open, inspect the intersecting row, column and zone, and combine another truthful clue. Doña Lupa cases are designed to have one logical solution."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="guide-page">
+  <a class="skip-link" href="#article">Skip to the guide</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/" aria-label="Doña Lupa home"><img src="/assets/app-icon.png" width="44" height="44" alt=""><span>Doña Lupa</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/#how">How it works</a>
+        <a href="/#cases">Cases</a>
+        <a href="/#guides">Guides</a>
+        <a class="language-link" href="/es/guias/como-jugar-sudoku-de-misterio/" lang="es" hreflang="es">ES</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="article">
+    <article>
+      <header class="guide-hero container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Doña Lupa</a><span aria-hidden="true">/</span><a href="/#guides">Guides</a><span aria-hidden="true">/</span><span>How to play deduction sudoku</span></nav>
+        <p class="eyebrow">Beginner case file</p>
+        <h1>How to play deduction sudoku</h1>
+        <p class="guide-deck"><strong>A deduction sudoku is a logic puzzle where every suspect appears once in each row, column and outlined zone.</strong> Read the clues, rule out impossible cells, and keep applying those three board constraints until everybody has exactly one place to stand.</p>
+        <figure class="guide-feature">
+          <img src="/assets/guides/how-to-play-deduction-sudoku-feature.webp" width="1536" height="1024" fetchpriority="high" alt="Deduction sudoku illustrated with suspects, clues and a logic grid">
+          <figcaption>A good investigation starts with the board, not the culprit.</figcaption>
+        </figure>
+      </header>
+
+      <div class="guide-layout container">
+        <aside class="key-points" aria-label="Key rules">
+          <p class="eyebrow">The rules at a glance</p>
+          <ul>
+            <li>One of each suspect per row</li>
+            <li>One of each suspect per column</li>
+            <li>One of each suspect per zone</li>
+            <li>Every clue is true</li>
+            <li>Every case has one solution</li>
+          </ul>
+        </aside>
+
+        <div class="guide-body">
+          <h2>Deduction sudoku rules in plain English</h2>
+          <p>Start with the grid. Instead of the digits used in a standard sudoku, Doña Lupa gives you a cast of illustrated suspects. If a case has six suspects, each row must contain all six once, each column must contain all six once, and every thickly outlined zone must also contain all six once. A suspect cannot repeat inside any of those three groups.</p>
+          <p>The zones are the part new players most often overlook. They may be square, long, bent or split across an area that looks awkward at first glance. Trace the heavy border before placing anyone. A cell belongs simultaneously to one row, one column and one zone, so every placement affects three parts of the board.</p>
+
+          <figure class="article-shot">
+            <img src="/assets/how-to-play.jpg" width="630" height="1369" loading="lazy" alt="Doña Lupa deduction sudoku tutorial explaining rows, columns and zones">
+            <figcaption>The in-app first case introduces rows, columns, zones and clues as you use them.</figcaption>
+          </figure>
+
+          <h2>A reliable way to solve your first case</h2>
+          <h3>1. Scan before you place</h3>
+          <p>Note the suspects, the zone shapes and any faces already on the board. Look for a row, column or zone that is nearly complete. If five different suspects already occupy a six-cell group, the empty cell is forced even without a story clue.</p>
+          <h3>2. Use the most direct clues first</h3>
+          <p>A clue may identify where someone is, where they are not, or how two facts relate. Apply statements that force a single cell before vague-looking relationships. When a clue rules out a cell, mark the impossibility instead of trying to remember it. Visible notes stop you from reopening a dead lead later.</p>
+          <h3>3. Let each placement travel</h3>
+          <p>Suppose you place the intern in the top-left cell. The intern can no longer appear anywhere else in that row, that column or that zone. Mark those exclusions immediately. One answer often creates another forced cell, which creates a third. This chain reaction is the real engine of deduction sudoku.</p>
+          <h3>4. Alternate clues and constraints</h3>
+          <p>Do not read every clue once and then abandon the story. A clue that seemed unhelpful may become decisive after the board narrows. Cycle between the clue list and the grid: place, eliminate, rescan, then return to the remaining clues.</p>
+
+          <div class="article-cta">
+            <div><p class="eyebrow">Try the method on a real case</p><h2>The tutorial waits until you make each deduction.</h2></div>
+            <a class="button button-primary" href="https://apps.apple.com/app/id6801481670">Play Doña Lupa free <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <h2>How to read a stuck board</h2>
+          <p>When no cell looks obvious, choose one suspect and inspect every possible position in a single row, column or zone. If all but one cell are blocked, you have found a hidden single: the answer is forced even though the cell itself had several candidates at first.</p>
+          <p>Also check intersections. If a suspect can only appear in two cells of a zone and both cells sit in the same row, that suspect cannot appear elsewhere in that row. You do not have to memorize a technical name for the pattern; just ask, “Where can this person still go, and what does that remove?”</p>
+
+          <figure class="article-shot article-shot-wide">
+            <img src="/assets/gameplay.jpg" width="630" height="1369" loading="lazy" alt="Deduction sudoku board in Doña Lupa with suspect candidates and crossed-out cells">
+            <figcaption>Notes make impossible cells visible, so the next forced placement is easier to spot.</figcaption>
+          </figure>
+
+          <h2>Three beginner mistakes to avoid</h2>
+          <ul>
+            <li><strong>Forgetting zones:</strong> a placement may be legal in its row and column but still repeat a suspect inside the outlined zone.</li>
+            <li><strong>Treating a clue as optional:</strong> every clue in Doña Lupa is true. If the board contradicts one, an earlier placement needs another look.</li>
+            <li><strong>Guessing too early:</strong> two possible cells are not a coin toss. Preserve both candidates and search for the constraint that separates them.</li>
+          </ul>
+          <p>Accuracy beats speed while the rules become familiar. After a few cases, you will stop checking rows, columns and zones separately; you will see their overlap as one deduction.</p>
+
+          <section class="article-faq" aria-labelledby="guide-faq-title">
+            <p class="eyebrow">Quick answers</p>
+            <h2 id="guide-faq-title">Deduction-sudoku beginner questions</h2>
+            <details><summary>Do I need to know number sudoku before I play?</summary><p>No. This format uses one-per-row, one-per-column and one-per-zone constraints, but Doña Lupa teaches them with illustrated suspects and an interactive first case.</p></details>
+            <details><summary>Should I guess when two suspects still fit?</summary><p>Usually no. Leave both possibilities open, inspect the intersecting row, column and zone, and combine another truthful clue. Doña Lupa cases are designed to have one logical solution.</p></details>
+          </section>
+        </div>
+      </div>
+
+      <section class="related-guides container" aria-labelledby="related-title">
+        <p class="eyebrow">Keep investigating</p>
+        <h2 id="related-title">Related logic guides</h2>
+        <div class="related-grid">
+          <a href="/guides/detective-logic-grid-puzzles/"><span>Solving method</span><strong>How detective logic-grid puzzles work</strong><small>Read the guide →</small></a>
+          <a href="/guides/murder-mystery-logic-puzzles/"><span>Genre guide</span><strong>What makes a murder-mystery logic puzzle fair?</strong><small>Read the guide →</small></a>
+        </div>
+      </section>
+    </article>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <img src="/assets/app-icon.png" width="112" height="112" alt="Doña Lupa app icon">
+        <div><p class="eyebrow">Your first case is ready</p><h2>Put every suspect in their place.</h2></div>
+        <a class="button button-primary" href="https://apps.apple.com/app/id6801481670">Play free on iPhone <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="/"><img src="/assets/app-icon.png" width="36" height="36" alt="">Doña Lupa</a>
+      <p>Cozy crimes, honest clues, terrible alibis.</p>
+      <nav aria-label="Footer links"><a href="/#guides">Guides</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a><a href="/es/guias/como-jugar-sudoku-de-misterio/" lang="es">Español</a></nav>
+      <small>© 2026 Laura González</small>
+    </div>
+  </footer>
+</body>
+</html>

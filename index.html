@@ -1,14 +1,257 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Doña Lupa — Cozy Murder Sudoku</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="_style.css"></head><body><main>
-<h1>Doña Lupa</h1>
-<p class="tag">"Nobody leaves without an alibi."</p>
-<div class="bar"></div>
-<p>A cozy deduction sudoku with cases that make you laugh. Put every suspect in their
-place — one per row, column and zone — crossing clues that never lie.</p>
-<p><a href="privacy/">Privacy Policy</a> · <a href="support/">Support</a></p>
-<footer>© 2026 Laura González</footer>
-</main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doña Lupa — Murder Sudoku &amp; Cozy Logic Game</title>
+  <meta name="description" content="Solve funny whodunit cases with sudoku-style logic. Place every suspect, cross honest clues, and catch the culprit. Free on iPhone.">
+  <meta name="theme-color" content="#f4ecd7">
+  <meta name="apple-itunes-app" content="app-id=6801481670">
+  <link rel="canonical" href="https://donalupa.com/">
+  <link rel="alternate" hreflang="en" href="https://donalupa.com/">
+  <link rel="alternate" hreflang="es" href="https://donalupa.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://donalupa.com/">
+  <link rel="icon" href="/assets/app-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="preload" as="image" href="/assets/gameplay.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="/_style.css?v=20260826-4">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Doña Lupa">
+  <meta property="og:title" content="Doña Lupa — Murder sudoku, with suspects">
+  <meta property="og:description" content="A cozy logic mystery with honest clues, ridiculous culprits and a fresh case every day.">
+  <meta property="og:url" content="https://donalupa.com/">
+  <meta property="og:image" content="https://donalupa.com/assets/gameplay.jpg">
+  <meta property="og:image:alt" content="Doña Lupa murder sudoku game board with illustrated suspects">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Doña Lupa — Murder sudoku, with suspects">
+  <meta name="twitter:description" content="A cozy logic mystery with honest clues and ridiculous culprits.">
+  <meta name="twitter:image" content="https://donalupa.com/assets/gameplay.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Doña Lupa: Murder Sudoku",
+        "description": "A cozy deduction sudoku with funny mystery cases, honest clues and one unique solution.",
+        "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Puzzle game",
+        "operatingSystem": "iOS",
+        "inLanguage": ["en", "es"],
+        "image": "https://donalupa.com/assets/app-icon.png",
+        "url": "https://donalupa.com/",
+        "downloadUrl": "https://apps.apple.com/app/id6801481670",
+        "installUrl": "https://apps.apple.com/app/id6801481670",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free cases with an optional one-time unlock. No subscription."
+        }
+      },
+      {
+        "@type": "WebSite",
+        "name": "Doña Lupa",
+        "url": "https://donalupa.com/",
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Is Doña Lupa really sudoku?", "acceptedAnswer": {"@type": "Answer", "text": "It uses sudoku's one-per-row, one-per-column and one-per-zone rule, but replaces numbers with illustrated suspects and adds truthful story clues. You never need to calculate anything."}},
+      {"@type": "Question", "name": "Do I need to know number sudoku first?", "acceptedAnswer": {"@type": "Answer", "text": "No. The interactive first case teaches rows, columns, zones, notes and clues as you use them."}},
+      {"@type": "Question", "name": "What are the basic deduction sudoku rules?", "acceptedAnswer": {"@type": "Answer", "text": "Place every suspect once in each row, column and outlined zone. Combine those constraints with the case clues until every cell is determined."}},
+      {"@type": "Question", "name": "Are all the clues true?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every clue in a Doña Lupa case is true, so a contradiction means an earlier placement needs another look."}},
+      {"@type": "Question", "name": "Do I have to guess when I get stuck?", "acceptedAnswer": {"@type": "Answer", "text": "No. Keep both candidates open, inspect their intersecting row, column and zone, and return to clues that gained meaning after your last placement."}},
+      {"@type": "Question", "name": "Are the mysteries scary or violent?", "acceptedAnswer": {"@type": "Answer", "text": "No. The cases are cozy comic mysteries about missing lunches, suspicious coffee and other very small crimes."}},
+      {"@type": "Question", "name": "Does every case have one solution?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The clues and board constraints are designed to lead to one checkable final arrangement."}},
+      {"@type": "Question", "name": "Can I play Doña Lupa for free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Easy cases are free in all three worlds, including a fresh daily case. One optional purchase unlocks the full collection; there are no ads or subscriptions."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the case</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/" aria-label="Doña Lupa home">
+        <img src="/assets/app-icon.png" width="44" height="44" alt="">
+        <span>Doña Lupa</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#how">How it works</a>
+        <a href="#cases">Cases</a>
+        <a href="#guides">Guides</a>
+        <a href="#faq">FAQ</a>
+        <a class="language-link" href="/es/" lang="es" hreflang="es">ES</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">●</span> Cozy logic mystery for iPhone</p>
+        <h1>Murder sudoku.<br><em>With suspects.</em></h1>
+        <p class="hero-lead">Put every suspect in their place, cross clues that never lie, and discover who committed a very small — and very silly — crime.</p>
+        <div class="cta-row">
+          <a class="button button-primary" href="https://apps.apple.com/app/id6801481670" aria-label="Download Doña Lupa on the App Store">Get it free on the App Store <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#how">See how a case works <span aria-hidden="true">↓</span></a>
+        </div>
+        <ul class="proof-list">
+          <li>Easy cases free</li>
+          <li>No ads</li>
+          <li>No subscription</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <div class="case-stamp" aria-hidden="true">CASE<br><strong>01</strong></div>
+        <img class="poster poster-main" src="/assets/gameplay.jpg" width="630" height="1369" alt="A Doña Lupa logic grid filled with illustrated suspects and deduction marks" fetchpriority="high">
+        <div class="evidence-note" aria-hidden="true"><span>Evidence</span> One culprit.<br>Zero believable alibis.</div>
+      </div>
+    </section>
+
+    <section class="fact-strip" aria-label="Game facts">
+      <div class="container facts">
+        <p><strong>60</strong><span>handmade cases</span></p>
+        <p><strong>3</strong><span>suspicious worlds</span></p>
+        <p><strong>1</strong><span>fresh daily case</span></p>
+        <p><strong>∞</strong><span>bad excuses</span></p>
+      </div>
+    </section>
+
+    <section class="section container" id="how">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">How to solve a tiny crime</p>
+          <h2>Think sudoku.<br>Then add a punchline.</h2>
+        </div>
+        <p>Every case is a self-contained logic puzzle. There is one suspect per row, column and zone — and exactly one solution.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="step-number">01</span><h3>Read the scene</h3><p>Someone stole a lunch, swapped the coffee, or committed another deeply unserious offense.</p></li>
+        <li><span class="step-number">02</span><h3>Cross the clues</h3><p>Place suspects and mark impossibilities. Every clue is true; the board does the rest.</p></li>
+        <li><span class="step-number">03</span><h3>Catch the culprit</h3><p>Complete the grid, reveal what really happened, and enjoy an alibi that should fool nobody.</p></li>
+      </ol>
+    </section>
+
+    <section class="section gallery-section" id="cases">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">Actual cases. Actual questionable behavior.</p>
+          <h2>Your next mystery is already making excuses.</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-card gallery-card-up">
+            <img src="/assets/case-intro.jpg" width="630" height="1369" loading="lazy" alt="Doña Lupa case intro about the mystery of the missing lunch">
+            <figcaption><span>01</span> Meet the crime</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="/assets/gameplay.jpg" width="630" height="1369" loading="lazy" alt="Doña Lupa murder sudoku board with suspects, clues and deduction tools">
+            <figcaption><span>02</span> Work the grid</figcaption>
+          </figure>
+          <figure class="gallery-card gallery-card-up">
+            <img src="/assets/case-solved.jpg" width="630" height="1369" loading="lazy" alt="Solved Doña Lupa case revealing the culprit and the final joke">
+            <figcaption><span>03</span> Expose the alibi</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container worlds-section">
+      <div class="worlds-copy">
+        <p class="eyebrow">Three worlds, sixty cases</p>
+        <h2>Crime has never been this inconvenient.</h2>
+        <p>Start with free cases in every world. Unlock the complete collection once — no subscription, no ads — and new cases can arrive without an app update.</p>
+        <a class="button button-dark" href="https://apps.apple.com/app/id6801481670">Open the first case <span aria-hidden="true">↗</span></a>
+      </div>
+      <ol class="world-list">
+        <li><span>01</span><div><h3>The Office</h3><p>Missing lunches, suspicious meetings, and stationery with a criminal record.</p></div></li>
+        <li><span>02</span><div><h3>Tea &amp; Tiny Crimes</h3><p>A cozy village where the tea is warm and everybody knows too much.</p></div></li>
+        <li><span>03</span><div><h3>The Grand Hotel</h3><p>Polished floors, impeccable service, and alibis left at reception.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section container tutorial-section">
+      <div class="tutorial-poster">
+        <img src="/assets/how-to-play.jpg" width="630" height="1369" loading="lazy" alt="Doña Lupa interactive tutorial explaining rows, columns, zones and clues">
+      </div>
+      <div class="tutorial-copy">
+        <p class="eyebrow">No detective degree required</p>
+        <h2>Learn by solving, not by reading a manual.</h2>
+        <p>An interactive first case teaches rows, columns, zones, notes and clues as you use them. Start on very easy; end up arguing with expert suspects.</p>
+        <ul class="check-list">
+          <li>Five difficulty levels</li>
+          <li>Hints that preserve the deduction</li>
+          <li>A unique solution in every case</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container guide-hub" id="guides">
+      <div class="section-heading split-heading">
+        <div><p class="eyebrow">Doña Lupa's case notes</p><h2>Learn the rules.<br>Keep the mystery.</h2></div>
+        <p>Clear, practical guides for reading the board, crossing clues and solving suspect-filled logic puzzles without guessing.</p>
+      </div>
+      <div class="guide-grid">
+        <a class="guide-card" href="/guides/how-to-play-deduction-sudoku/">
+          <span>Beginner guide</span>
+          <h3>How to play deduction sudoku</h3>
+          <p>Rows, columns, zones and the exact solving order for your first case.</p>
+          <small>Open the case file →</small>
+        </a>
+        <a class="guide-card" href="/guides/detective-logic-grid-puzzles/">
+          <span>Solving method</span>
+          <h3>Detective logic grids</h3>
+          <p>A five-pass loop for turning story clues into forced placements.</p>
+          <small>Open the notebook →</small>
+        </a>
+        <a class="guide-card" href="/guides/murder-mystery-logic-puzzles/">
+          <span>Genre guide</span>
+          <h3>Fair mystery puzzles</h3>
+          <p>Why one answer, honest evidence and a closed cast make deduction satisfying.</p>
+          <small>Inspect the evidence →</small>
+        </a>
+      </div>
+    </section>
+
+    <section class="section container faq" id="faq">
+      <div class="section-heading split-heading">
+        <div><p class="eyebrow">The interrogation room</p><h2>Questions with<br>straight answers.</h2></div>
+      </div>
+      <div class="faq-list">
+        <details><summary>Is Doña Lupa really sudoku?</summary><p>It uses sudoku's one-per-row, one-per-column and one-per-zone rule, but replaces numbers with illustrated suspects and adds truthful story clues. You never need to calculate anything.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">Learn how deduction sudoku works →</a></details>
+        <details><summary>Do I need to know number sudoku first?</summary><p>No. The interactive first case teaches rows, columns, zones, notes and clues as you use them.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">Read the beginner guide →</a></details>
+        <details><summary>What are the basic deduction sudoku rules?</summary><p>Place every suspect once in each row, column and outlined zone. Combine those constraints with the case clues until every cell is determined.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">See the rules step by step →</a></details>
+        <details><summary>Are all the clues true?</summary><p>Yes. Every clue in a Doña Lupa case is true, so a contradiction means an earlier placement needs another look.</p><a class="faq-more" href="/guides/detective-logic-grid-puzzles/">Learn how to cross clues →</a></details>
+        <details><summary>Do I have to guess when I get stuck?</summary><p>No. Keep both candidates open, inspect their intersecting row, column and zone, and return to clues that gained meaning after your last placement.</p><a class="faq-more" href="/guides/detective-logic-grid-puzzles/">Use the no-guessing method →</a></details>
+        <details><summary>Are the mysteries scary or violent?</summary><p>No. The cases are cozy comic mysteries about missing lunches, suspicious coffee and other very small crimes.</p><a class="faq-more" href="/guides/murder-mystery-logic-puzzles/">Explore cozy logic mysteries →</a></details>
+        <details><summary>Does every case have one solution?</summary><p>Yes. The clues and board constraints are designed to lead to one checkable final arrangement.</p><a class="faq-more" href="/guides/murder-mystery-logic-puzzles/">See what makes a puzzle fair →</a></details>
+        <details><summary>Can I play Doña Lupa for free?</summary><p>Yes. Easy cases are free in all three worlds, including a fresh daily case. One optional purchase unlocks the full collection; there are no ads or subscriptions.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">Meet your first free case →</a></details>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <img src="/assets/app-icon.png" width="112" height="112" alt="Doña Lupa app icon">
+        <div><p class="eyebrow">A suspect is waiting</p><h2>Nobody leaves without an alibi.</h2></div>
+        <a class="button button-primary" href="https://apps.apple.com/app/id6801481670">Play free on iPhone <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="/"><img src="/assets/app-icon.png" width="36" height="36" alt="">Doña Lupa</a>
+      <p>Cozy crimes, honest clues, terrible alibis.</p>
+      <nav aria-label="Footer links"><a href="#guides">Guides</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a><a href="/es/" lang="es">Español</a></nav>
+      <small>© 2026 Laura González</small>
+    </div>
+  </footer>
+</body>
+</html>

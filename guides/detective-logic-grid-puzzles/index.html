@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detective Logic Grids: A No-Guessing Method | Doña Lupa</title>
+  <meta name="description" content="Solve detective logic grid puzzles with a repeatable method: record direct clues, propagate constraints, inspect intersections, and avoid guessing.">
+  <meta name="theme-color" content="#f4ecd7">
+  <meta name="apple-itunes-app" content="app-id=6801481670">
+  <link rel="canonical" href="https://donalupa.com/guides/detective-logic-grid-puzzles/">
+  <link rel="alternate" hreflang="en" href="https://donalupa.com/guides/detective-logic-grid-puzzles/">
+  <link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/juegos-de-detectives-y-logica/">
+  <link rel="alternate" hreflang="x-default" href="https://donalupa.com/guides/detective-logic-grid-puzzles/">
+  <link rel="icon" href="/assets/app-icon.png">
+  <link rel="stylesheet" href="/_style.css?v=20260826-4">
+  <link rel="preload" as="image" href="/assets/guides/detective-logic-grid-puzzles-feature.webp" fetchpriority="high">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Doña Lupa">
+  <meta property="og:title" content="Detective Logic Grid Puzzles: A No-Guessing Method">
+  <meta property="og:description" content="A practical loop for turning story clues into forced placements.">
+  <meta property="og:url" content="https://donalupa.com/guides/detective-logic-grid-puzzles/">
+  <meta property="og:image" content="https://donalupa.com/assets/guides/detective-logic-grid-puzzles-feature.webp">
+  <meta property="og:image:alt" content="Detective logic grid puzzle with clue cards, suspect portraits and marked possibilities">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Detective Logic Grid Puzzles: A No-Guessing Method">
+  <meta name="twitter:description" content="Turn story clues into clean deductions with a repeatable solving loop.">
+  <meta name="twitter:image" content="https://donalupa.com/assets/guides/detective-logic-grid-puzzles-feature.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Detective Logic Grid Puzzles: A No-Guessing Method",
+        "description": "A repeatable method for recording clues, propagating constraints and solving detective logic grid puzzles without guessing.",
+        "image": "https://donalupa.com/assets/guides/detective-logic-grid-puzzles-feature.webp",
+        "datePublished": "2026-08-26",
+        "dateModified": "2026-08-26",
+        "inLanguage": "en",
+        "author": {"@type": "Person", "name": "Laura González"},
+        "publisher": {"@type": "Organization", "name": "Doña Lupa", "logo": {"@type": "ImageObject", "url": "https://donalupa.com/assets/app-icon.png"}},
+        "mainEntityOfPage": "https://donalupa.com/guides/detective-logic-grid-puzzles/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Doña Lupa", "item": "https://donalupa.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://donalupa.com/#guides"},
+          {"@type": "ListItem", "position": 3, "name": "Detective Logic Grid Puzzles", "item": "https://donalupa.com/guides/detective-logic-grid-puzzles/"}
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to solve a detective logic grid puzzle without guessing",
+        "description": "A five-pass loop for converting clues into checkable deductions.",
+        "totalTime": "PT15M",
+        "step": [
+          {"@type": "HowToStep", "position": 1, "name": "Map the board", "text": "Identify every row, column and zone and note which suspects are already placed."},
+          {"@type": "HowToStep", "position": 2, "name": "Record direct facts", "text": "Apply positive clues and mark every explicit impossibility."},
+          {"@type": "HowToStep", "position": 3, "name": "Propagate each placement", "text": "Remove the placed suspect from the rest of its row, column and zone."},
+          {"@type": "HowToStep", "position": 4, "name": "Inspect one suspect at a time", "text": "Search a group for the only cell where a particular suspect can still appear."},
+          {"@type": "HowToStep", "position": 5, "name": "Audit the solution", "text": "Confirm every clue and every one-per-group rule before revealing the culprit."}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "What should I do when a logic grid has no obvious next move?", "acceptedAnswer": {"@type": "Answer", "text": "Choose one suspect and check all of their remaining cells inside each row, column and zone. Then reread the relational clues using the candidates that remain."}},
+          {"@type": "Question", "name": "Are notes necessary in detective logic puzzles?", "acceptedAnswer": {"@type": "Answer", "text": "They are not mandatory on very small boards, but marking impossible cells reduces memory load and makes hidden singles and intersections much easier to see."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="guide-page">
+  <a class="skip-link" href="#article">Skip to the guide</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/" aria-label="Doña Lupa home"><img src="/assets/app-icon.png" width="44" height="44" alt=""><span>Doña Lupa</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/#how">How it works</a>
+        <a href="/#cases">Cases</a>
+        <a href="/#guides">Guides</a>
+        <a class="language-link" href="/es/guias/juegos-de-detectives-y-logica/" lang="es" hreflang="es">ES</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="article">
+    <article>
+      <header class="guide-hero container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Doña Lupa</a><span aria-hidden="true">/</span><a href="/#guides">Guides</a><span aria-hidden="true">/</span><span>Detective logic grids</span></nav>
+        <p class="eyebrow">Detective's notebook</p>
+        <h1>How to solve detective logic grid puzzles</h1>
+        <p class="guide-deck"><strong>Use a simple loop: record a clue, remove every possibility it forbids, place anything forced, then scan the changed rows, columns and zones.</strong> Repeat that loop and a crowded detective grid becomes a series of small, checkable decisions.</p>
+        <figure class="guide-feature">
+          <img src="/assets/guides/detective-logic-grid-puzzles-feature.webp" width="1536" height="1024" fetchpriority="high" alt="Detective logic grid puzzles shown with suspect portraits, clues and deduction marks">
+          <figcaption>Good detectives keep fewer possibilities in their heads and more on the board.</figcaption>
+        </figure>
+      </header>
+
+      <div class="guide-layout container">
+        <aside class="key-points" aria-label="Solving loop">
+          <p class="eyebrow">The five-pass loop</p>
+          <ol>
+            <li>Map the groups</li>
+            <li>Record direct facts</li>
+            <li>Propagate placements</li>
+            <li>Inspect one suspect</li>
+            <li>Audit every clue</li>
+          </ol>
+        </aside>
+
+        <div class="guide-body">
+          <h2>Translate the story into board facts</h2>
+          <p>Detective language creates atmosphere, but your first task is practical: turn each sentence into something the grid can show. “The manager was not near the missing lunch” removes positions. “The guest shared a zone with the concierge” links candidates. “The intern was in the final column” creates a placement or a short list of cells.</p>
+          <p>Do not try to solve the whole sentence in your head. Mark what is certain now and leave the rest available for later. A relational clue may do almost nothing at the start, then become decisive once one of its suspects has only two possible cells.</p>
+
+          <figure class="article-shot">
+            <img src="/assets/gameplay.jpg" width="630" height="1369" loading="lazy" alt="Detective logic grid in Doña Lupa with suspect notes and exclusions">
+            <figcaption>Crosses are evidence too: each impossibility narrows three overlapping groups.</figcaption>
+          </figure>
+
+          <h2>A five-pass method for any case</h2>
+          <h3>Pass 1: map rows, columns and zones</h3>
+          <p>Trace the outlined zones and count their cells. On a six-suspect board, every row, column and zone must hold all six suspects once. Pay special attention to bent zones, because a legal-looking row placement can still create a duplicate inside one.</p>
+          <h3>Pass 2: enter direct positives and negatives</h3>
+          <p>Start with clues that name a definite location or rule one out. Positive information is tempting, but negative clues are equally useful. Four crossed-out cells in a six-cell group leave only two candidates, and another board rule may remove one of those without a new clue.</p>
+          <h3>Pass 3: propagate immediately</h3>
+          <p>After placing a suspect, sweep their row, column and zone. Remove that suspect from every other cell in all three groups. Delaying this step hides the chain reactions that make the puzzle move.</p>
+          <h3>Pass 4: reverse the question</h3>
+          <p>If no cell has a single candidate, stop asking which suspect fits a particular cell. Pick one suspect and ask where they can appear within a row, column or zone. When only one location survives, you have a forced placement even if that cell still displayed several candidates.</p>
+          <h3>Pass 5: reread and audit</h3>
+          <p>Return to every unused clue after the board changes. Before revealing the culprit, verify that each group contains every suspect once and that the completed positions satisfy every sentence. A contradiction is useful: it points to the earliest unsupported placement.</p>
+
+          <div class="article-cta">
+            <div><p class="eyebrow">Practice the loop</p><h2>Every Doña Lupa clue is true. The alibis are another matter.</h2></div>
+            <a class="button button-primary" href="https://apps.apple.com/app/id6801481670">Solve a free case <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <h2>Two patterns worth learning</h2>
+          <p><strong>The hidden single:</strong> a suspect has only one possible cell inside a group, even though that cell has several possible suspects. Check both directions—cell to suspect and suspect to cell—whenever progress stops.</p>
+          <p><strong>The locked intersection:</strong> within one zone, every remaining position for a suspect falls on the same row or column. That suspect is therefore blocked from the rest of that row or column outside the zone. It is simply the consequence of the one-per-zone rule meeting the one-per-row rule.</p>
+
+          <figure class="article-shot article-shot-wide">
+            <img src="/assets/case-packs.jpg" width="630" height="1369" loading="lazy" alt="Doña Lupa detective puzzle cases arranged by world and difficulty">
+            <figcaption>Starting on an easier board lets you practise the loop before the clues become more intertwined.</figcaption>
+          </figure>
+
+          <h2>What not to do when you are stuck</h2>
+          <ul>
+            <li><strong>Do not erase every candidate:</strong> preserve confirmed exclusions; they are the record of your reasoning.</li>
+            <li><strong>Do not pick the guiltiest face:</strong> character art supports the story, not the formal solution.</li>
+            <li><strong>Do not force a binary choice:</strong> if two cells remain, inspect their other groups and leave both open until one is disproved.</li>
+          </ul>
+          <p>If the board rules themselves are unfamiliar, read <a href="/guides/how-to-play-deduction-sudoku/">the beginner deduction sudoku guide</a>. For the storytelling side of the format, see what makes a <a href="/guides/murder-mystery-logic-puzzles/">murder mystery logic puzzle fair</a>.</p>
+
+          <section class="article-faq" aria-labelledby="guide-faq-title">
+            <p class="eyebrow">Quick answers</p>
+            <h2 id="guide-faq-title">Logic-grid solving questions</h2>
+            <details><summary>What should I do when a logic grid has no obvious next move?</summary><p>Choose one suspect and check all of their remaining cells inside each row, column and zone. Then reread the relational clues using the candidates that remain.</p></details>
+            <details><summary>Are notes necessary in detective logic puzzles?</summary><p>They are not mandatory on very small boards, but marking impossible cells reduces memory load and makes hidden singles and intersections much easier to see.</p></details>
+          </section>
+        </div>
+      </div>
+
+      <section class="related-guides container" aria-labelledby="related-title">
+        <p class="eyebrow">Keep investigating</p>
+        <h2 id="related-title">Related logic guides</h2>
+        <div class="related-grid">
+          <a href="/guides/how-to-play-deduction-sudoku/"><span>Beginner rules</span><strong>Rows, columns and zones explained</strong><small>Read the guide →</small></a>
+          <a href="/guides/murder-mystery-logic-puzzles/"><span>Genre guide</span><strong>Why fair mystery puzzles have one answer</strong><small>Read the guide →</small></a>
+        </div>
+      </section>
+    </article>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <img src="/assets/app-icon.png" width="112" height="112" alt="Doña Lupa app icon">
+        <div><p class="eyebrow">The board remembers everything</p><h2>Cross the clues. Catch the culprit.</h2></div>
+        <a class="button button-primary" href="https://apps.apple.com/app/id6801481670">Play free on iPhone <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="/"><img src="/assets/app-icon.png" width="36" height="36" alt="">Doña Lupa</a>
+      <p>Cozy crimes, honest clues, terrible alibis.</p>
+      <nav aria-label="Footer links"><a href="/#guides">Guides</a><a href="/privacy/">Privacy</a><a href="/support/">Support</a><a href="/es/guias/juegos-de-detectives-y-logica/" lang="es">Español</a></nav>
+      <small>© 2026 Laura González</small>
+    </div>
+  </footer>
+</body>
+</html>

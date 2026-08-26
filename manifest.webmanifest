@@ -1,0 +1,16 @@
+{
+  "name": "Doña Lupa",
+  "short_name": "Doña Lupa",
+  "description": "Murder sudoku with suspects, clues and tiny crimes.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f4ecd7",
+  "theme_color": "#f4ecd7",
+  "icons": [
+    {
+      "src": "/assets/app-icon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
