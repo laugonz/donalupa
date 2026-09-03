@@ -6,10 +6,11 @@
 - Bundle ID: `com.laugonz.casegrid`
 - Seller: Laura Gonzalez Lopez
 - Live names: “Doña Lupa: Murder Sudoku” (US) and “Doña Lupa: Sudoku de Misterio” (Spain and Mexico)
-- Version audited: `1.0.0` on 2026-08-26
+- Version audited: `1.1.0` on 2026-09-01
 - Platforms: iPhone / iOS
 - Categories: Games / Board / Puzzle
-- Languages: English and Spanish
+- Live App Store languages: English and Spanish
+- Prepared app languages for the next binary: English, Spanish, Italian, Portuguese (Portugal) and French
 - Store price: free download; easy cases are free and the full collection is an optional one-time unlock
 - Primary CTA: `https://apps.apple.com/app/id6801481670`
 - Google Play: no listing was found for this bundle ID during the audit
@@ -24,13 +25,13 @@ The following text is preserved verbatim from the live listings before any websi
 >
 > It's a deduction sudoku with cases that make you laugh. Put every suspect in their place —one per row, per column and per zone— by crossing clues that never lie. When they all fit, the missing thing turns up… and the culprit always has a punchline.
 >
-> • Three worlds: the office, a village of cozy crimes with tea, and the Grand Hotel — with new cases arriving without an app update.  
+> • Four worlds: the office, a village of cozy crimes with tea, the Grand Hotel and the Summer Cruise — with new cases arriving without an app update.
 > • From "very easy" to "expert": you start placing, you end up thinking.  
 > • A fresh case every day.  
 > • Honest clues: every one is true, and there is a single solution.  
 > • One-time purchase. No subscription, no ads.
 >
-> The easy cases are free in all three worlds. When you want the real challenge, one purchase unlocks everything.
+> The easy cases are free in all four worlds. When you want the real challenge, one purchase unlocks everything.
 >
 > Terms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
@@ -42,13 +43,13 @@ At the audit date, the US listing had no public ratings. Do not add rating marku
 >
 > Es un sudoku de deducción con casos que dan risa. Coloca a cada sospechoso en su sitio —uno por fila, por columna y por zona— cruzando pistas que nunca mienten. Cuando encajan todas, aparece lo que faltaba… y el culpable siempre tiene un remate.
 >
-> • Tres mundos: la oficina, un pueblo de crímenes con té, y el Gran Hotel — y llegan casos nuevos sin actualizar la app.  
+> • Cuatro mundos: la oficina, un pueblo de crímenes con té, el Gran Hotel y el Crucero de verano — y llegan casos nuevos sin actualizar la app.
 > • De «muy fácil» a «experto»: empiezas colocando, terminas pensando.  
 > • Un caso nuevo cada día.  
 > • Pistas honestas: todas son verdad, y hay una única solución.  
 > • Pago único. Sin suscripción y sin anuncios.
 >
-> Los casos fáciles son gratis en los tres mundos. Cuando quieras el reto de verdad, lo desbloqueas todo con un único pago.
+> Los casos fáciles son gratis en los cuatro mundos. Cuando quieras el reto de verdad, lo desbloqueas todo con un único pago.
 >
 > Términos de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 
@@ -75,6 +76,9 @@ Everank/DataForSEO research on 2026-08-26 supports the following priorities. Vol
 | US / English | `logic puzzle game`, `logic grid puzzle` | `murder mystery game`, `detective puzzle game`, `cozy mystery game`, `whodunit game` | `logic puzzle game` ~14.8k monthly searches; `murder mystery` ~27.1k; `logic grid` ~8.1k | Exact “murder sudoku” terms currently have little or no measured Google volume but explain the product clearly. |
 | Spain / Spanish | `acertijos de lógica`, `juego de detectives` | `sudoku de misterio`, `juego de misterio`, `resolver misterios` | `juego de detectives` ~590; `juego de misterio` ~320 | Use natural Spanish copy; do not repeat keywords mechanically. |
 | Mexico / Spanish | `acertijos de lógica`, `juego de detectives` | `sudoku de misterio`, `juego de misterio` | Track independently | Rankings, wording and demand may differ from Spain even when the page language is shared. |
+| Italy / Italian | `giochi di logica`, `sudoku investigativo` | `enigmi logici`, `giochi investigativi`, `deduzione` | Current Italian listings repeatedly use *indizi*, *sospetti* and *logica* | Keep the title distinctive; do not imitate the generic competitor formula “Sudoku Detective: Omicidio”. |
+| Portugal / Portuguese | `jogos de lógica`, `sudoku de mistério` | `jogo de detetive`, `dedução`, `grelha lógica` | Portugal storefront copy uses *grelha*, *pistas* and *sem subscrição* | Use European Portuguese throughout; do not silently serve Brazilian Portuguese. |
+| France / French | `jeux de logique`, `sudoku mystère` | `jeu d'enquête`, `énigmes logiques`, `déduction` | French listings use *enquête*, *indices* and *grille* | Prefer *affaire* or *enquête* to a literal translation of “case”, depending on context. |
 
 Historical audit note: Everank/DataForSEO reported about 12.1k US and 49.5k Spain monthly searches for the MURDOKU mark. Those figures are retained only to explain the research decision; the mark is not a generic SEO target. Its only deliberate public use is the sourced, independent comparison page described below.
 
@@ -110,6 +114,9 @@ Each primary long-tail phrase has one substantive guide. The English and Spanish
 
 - `/` — English product landing
 - `/es/` — Spanish product landing
+- `/it/` — Italian product landing
+- `/pt/` — Portugal Portuguese product landing
+- `/fr/` — French product landing
 - `/guides/how-to-play-deduction-sudoku/` — English beginner rules
 - `/guides/murder-mystery-logic-puzzles/` — English genre guide
 - `/guides/detective-logic-grid-puzzles/` — English solving method
@@ -117,8 +124,8 @@ Each primary long-tail phrase has one substantive guide. The English and Spanish
 - `/es/guias/puzles-de-misterio-y-logica/` — Spanish genre guide
 - `/es/guias/juegos-de-detectives-y-logica/` — Spanish solving method
 - `/es/guias/murdoku-y-dona-lupa/` — independent, sourced product comparison
-- `/privacy/` — bilingual privacy policy
-- `/support/` — bilingual support contact
+- `/privacy/` — privacy policy in English, Spanish, Italian, Portugal Portuguese and French
+- `/support/` — support contact in English, Spanish, Italian, Portugal Portuguese and French
 
 Permanent redirects preserve existing links without keeping the mark as a generic page topic:
 
