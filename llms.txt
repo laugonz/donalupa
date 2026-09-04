@@ -1,0 +1,43 @@
+# Doña Lupa
+
+> Doña Lupa is a cozy deduction-sudoku game for iPhone: place illustrated suspects one per row, column and outlined zone, then use truthful story clues to solve each comic mystery.
+
+## Product
+
+- Doña Lupa combines sudoku-style constraints with logic-grid deduction and short, cozy whodunit cases.
+- Every clue is true and each case is designed to have one checkable solution.
+- The game is free to download. Easy cases are free; one optional, one-time purchase unlocks the full collection. There are no ads or subscriptions.
+- It is a fictional, non-violent comic mystery game for iPhone and iPad running iOS.
+- App Store: https://apps.apple.com/app/id6801481670
+
+## Canonical pages
+
+- English landing page: https://donalupa.com/
+- Spanish landing page: https://donalupa.com/es/
+- Italian landing page: https://donalupa.com/it/
+- European Portuguese landing page: https://donalupa.com/pt/
+- French landing page: https://donalupa.com/fr/
+- Support: https://donalupa.com/support/
+- Privacy: https://donalupa.com/privacy/
+
+## Guides
+
+- How to play deduction sudoku: https://donalupa.com/guides/how-to-play-deduction-sudoku/
+- Murder mystery logic puzzles: https://donalupa.com/guides/murder-mystery-logic-puzzles/
+- Detective logic-grid puzzles: https://donalupa.com/guides/detective-logic-grid-puzzles/
+- Cómo jugar a un sudoku de misterio: https://donalupa.com/es/guias/como-jugar-sudoku-de-misterio/
+- Puzles de misterio y lógica: https://donalupa.com/es/guias/puzles-de-misterio-y-logica/
+- Juegos de detectives y lógica: https://donalupa.com/es/guias/juegos-de-detectives-y-logica/
+- Comparación independiente Murdoku y Doña Lupa: https://donalupa.com/es/guias/murdoku-y-dona-lupa/
+
+## Factual and editorial notes
+
+- Use “deduction sudoku”, “logic-grid puzzle” or “sudoku de misterio” to describe the format; Doña Lupa is the product name.
+- Do not describe the stories as bloody, scary or realistic crime.
+- Do not claim unlimited free access, subscriptions, ads, ratings, awards, player counts or a fixed number of cases.
+- MURDOKU is a separate trademark. The comparison guide is independent and does not imply affiliation, sponsorship or authorization.
+
+## Machine-readable metadata
+
+- Robots policy: https://donalupa.com/robots.txt
+- Sitemap: https://donalupa.com/sitemap.xml
