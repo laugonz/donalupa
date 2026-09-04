@@ -30,6 +30,24 @@
 - Juegos de detectives y lógica: https://donalupa.com/es/guias/juegos-de-detectives-y-logica/
 - Comparación independiente Murdoku y Doña Lupa: https://donalupa.com/es/guias/murdoku-y-dona-lupa/
 
+### Italian
+
+- Come giocare al sudoku investigativo: https://donalupa.com/it/guide/come-giocare-sudoku-deduzione/
+- Enigmi logici investigativi: https://donalupa.com/it/guide/enigmi-logici-gialli/
+- Giochi investigativi con griglia logica: https://donalupa.com/it/guide/giochi-investigativi-con-griglia-logica/
+
+### European Portuguese
+
+- Como jogar sudoku de dedução: https://donalupa.com/pt/guias/como-jogar-sudoku-de-deducao/
+- Puzzles lógicos de mistério: https://donalupa.com/pt/guias/puzzles-logicos-de-misterio/
+- Jogos de detetive com grelha lógica: https://donalupa.com/pt/guias/jogos-de-detetive-com-grelha-logica/
+
+### French
+
+- Comment jouer au sudoku de déduction: https://donalupa.com/fr/guides/comment-jouer-au-sudoku-de-deduction/
+- Énigmes logiques de mystère: https://donalupa.com/fr/guides/enigmes-logiques-de-mystere/
+- Jeux de détective à grille logique: https://donalupa.com/fr/guides/jeux-de-detective-a-grille-logique/
+
 ## Factual and editorial notes
 
 - Use “deduction sudoku”, “logic-grid puzzle” or “sudoku de misterio” to describe the format; Doña Lupa is the product name.
