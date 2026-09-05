@@ -88,9 +88,54 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/juegos-de-detectives-y-logica/"/>
   </url>
   <url>
-    <loc>https://donalupa.com/es/guias/murdoku-y-dona-lupa/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <loc>https://donalupa.com/guides/murdoku-vs-dona-lupa/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/murdoku-y-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://donalupa.com/fr/guides/murdoku-et-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://donalupa.com/it/guide/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://donalupa.com/pt/guias/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
+  </url>
+  <url>
+    <loc>https://donalupa.com/es/guias/murdoku-y-dona-lupa/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/murdoku-y-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://donalupa.com/fr/guides/murdoku-et-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://donalupa.com/it/guide/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://donalupa.com/pt/guias/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
+  </url>
+  <url>
+    <loc>https://donalupa.com/fr/guides/murdoku-et-dona-lupa/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/murdoku-y-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://donalupa.com/fr/guides/murdoku-et-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://donalupa.com/it/guide/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://donalupa.com/pt/guias/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
+  </url>
+  <url>
+    <loc>https://donalupa.com/it/guide/murdoku-e-dona-lupa/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/murdoku-y-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://donalupa.com/fr/guides/murdoku-et-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://donalupa.com/it/guide/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://donalupa.com/pt/guias/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
+  </url>
+  <url>
+    <loc>https://donalupa.com/pt/guias/murdoku-e-dona-lupa/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://donalupa.com/es/guias/murdoku-y-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://donalupa.com/fr/guides/murdoku-et-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://donalupa.com/it/guide/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://donalupa.com/pt/guias/murdoku-e-dona-lupa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://donalupa.com/guides/murdoku-vs-dona-lupa/"/>
   </url>
   <url><loc>https://donalupa.com/it/guide/come-giocare-sudoku-deduzione/</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://donalupa.com/it/guide/enigmi-logici-gialli/</loc><lastmod>2026-09-04</lastmod></url>

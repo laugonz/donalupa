@@ -80,13 +80,13 @@ Everank/DataForSEO research on 2026-08-26 supports the following priorities. Vol
 | Portugal / Portuguese | `jogos de lógica`, `sudoku de mistério` | `jogo de detetive`, `dedução`, `grelha lógica` | Portugal storefront copy uses *grelha*, *pistas* and *sem subscrição* | Use European Portuguese throughout; do not silently serve Brazilian Portuguese. |
 | France / French | `jeux de logique`, `sudoku mystère` | `jeu d'enquête`, `énigmes logiques`, `déduction` | French listings use *enquête*, *indices* and *grille* | Prefer *affaire* or *enquête* to a literal translation of “case”, depending on context. |
 
-Historical audit note: Everank/DataForSEO reported about 12.1k US and 49.5k Spain monthly searches for the MURDOKU mark. Those figures are retained only to explain the research decision; the mark is not a generic SEO target. Its only deliberate public use is the sourced, independent comparison page described below.
+Research updated through 2026-09-05: Everank/DataForSEO reported about 12.1k monthly searches in the US, 74k in Spain and 6.6k in Italy for the MURDOKU mark. These directional figures explain the editorial decision; the mark is not a generic SEO target. Its deliberate public use is limited to the sourced, independent comparison pages described below.
 
 SERP review found clear informational intent around learning the rules, using clues and understanding the overlap between sudoku and logic-grid deduction. The guide cluster therefore targets questions the app can answer honestly, rather than building thin pages around every keyword variant.
 
 ## Long-tail guide map
 
-Each primary long-tail phrase has one substantive guide. The English and Spanish pages form three translation pairs, but each localization should read natively rather than as a mechanical translation.
+Each primary long-tail phrase has one substantive guide. Generic guides are localized by market, and the independent product comparison has one native version per supported language rather than thin keyword variants.
 
 | Locale | URL | Primary phrase | Supporting phrases | Search intent | Feature asset |
 | --- | --- | --- | --- | --- | --- |
@@ -97,6 +97,10 @@ Each primary long-tail phrase has one substantive guide. The English and Spanish
 | ES | `/es/guias/puzles-de-misterio-y-logica/` | `puzles de misterio y lógica` | `acertijos de lógica con pistas`, `juego de misterio`, `resolver misterios` | Entender el género y la deducción por pistas | `assets/guides/puzles-de-misterio-y-logica-feature.webp` |
 | ES | `/es/guias/juegos-de-detectives-y-logica/` | `juegos de detectives y lógica` | `juego de detectives`, `cuadrícula lógica`, `deducción lógica` | Aprender un método repetible para cruzar pistas | `assets/guides/juegos-de-detectives-y-logica-feature.webp` |
 | ES | `/es/guias/murdoku-y-dona-lupa/` | `Murdoku y Doña Lupa` | `diferencias`, `comparación independiente` | Comparar objetivamente dos productos identificados por su nombre | `assets/guides/murdoku-y-dona-lupa-feature.webp` |
+| EN | `/guides/murdoku-vs-dona-lupa/` | `Murdoku vs Doña Lupa` | `differences`, `independent comparison` | Compare two named products objectively | `assets/guides/murdoku-y-dona-lupa-feature.webp` |
+| FR | `/fr/guides/murdoku-et-dona-lupa/` | `Murdoku et Doña Lupa` | `différences`, `comparaison indépendante` | Comparer objectivement deux produits nommés | `assets/guides/murdoku-y-dona-lupa-feature.webp` |
+| IT | `/it/guide/murdoku-e-dona-lupa/` | `Murdoku e Doña Lupa` | `differenze`, `confronto indipendente` | Confrontare obiettivamente due prodotti nominati | `assets/guides/murdoku-y-dona-lupa-feature.webp` |
+| PT | `/pt/guias/murdoku-e-dona-lupa/` | `Murdoku e Doña Lupa` | `diferenças`, `comparação independente` | Comparar objetivamente dois produtos identificados | `assets/guides/murdoku-y-dona-lupa-feature.webp` |
 
 ### On-page placement
 
@@ -124,6 +128,10 @@ Each primary long-tail phrase has one substantive guide. The English and Spanish
 - `/es/guias/puzles-de-misterio-y-logica/` — Spanish genre guide
 - `/es/guias/juegos-de-detectives-y-logica/` — Spanish solving method
 - `/es/guias/murdoku-y-dona-lupa/` — independent, sourced product comparison
+- `/guides/murdoku-vs-dona-lupa/` — English independent, sourced product comparison
+- `/fr/guides/murdoku-et-dona-lupa/` — French independent, sourced product comparison
+- `/it/guide/murdoku-e-dona-lupa/` — Italian independent, sourced product comparison
+- `/pt/guias/murdoku-e-dona-lupa/` — European Portuguese independent, sourced product comparison
 - `/privacy/` — privacy policy in English, Spanish, Italian, Portugal Portuguese and French
 - `/support/` — support contact in English, Spanish, Italian, Portugal Portuguese and French
 
@@ -210,8 +218,8 @@ Use `assets/app-icon.png` as a visual style reference for all seven generations.
 - MURDOKU is European Union word mark no. `019308162`, filed on 2026-01-26 and registered on 2026-07-29 for Studios Digivoid Inc. Its listed goods and services include logic puzzles, online games and downloadable/mobile logic games.
 - Official record: `https://euipo.europa.eu/eSearch/#details/trademarks/019308162`.
 - Never use MURDOKU as the generic name of Doña Lupa's format, in ordinary guide titles, generic metadata, FAQ labels or product copy.
-- Public editorial use is limited to `/es/guias/murdoku-y-dona-lupa/`, where the name identifies the compared product and the comparison remains objective, sourced, non-misleading and non-derogatory.
-- Keep this notice prominent on that page: “MURDOKU es una marca de Studios Digivoid Inc. Doña Lupa es un producto independiente y no está afiliado, patrocinado ni autorizado por sus titulares.”
+- Public editorial use is limited to the five localized comparison URLs in the guide map, where the name identifies the compared product and the comparison remains objective, sourced, non-misleading and non-derogatory.
+- Keep a prominent, accurately localized notice on every comparison page stating that MURDOKU is a Studios Digivoid Inc. trademark and Doña Lupa is independent, unaffiliated, unsponsored and unauthorized by its owners.
 - Never use the competitor's logo, screenshots, book covers, characters or visual identity.
 - Keep the two legacy URLs only as permanent redirects. Do not recreate generic pages under those slugs.
 
