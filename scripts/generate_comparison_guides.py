@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 APP = "https://apps.apple.com/app/id6801481670"
 IMAGE = "https://donalupa.com/assets/guides/murdoku-y-dona-lupa-feature.webp"
 PUBLISHED = "2026-08-26"
-MODIFIED = "2026-09-05"
+MODIFIED = "2026-09-13"
 
 ALTERNATES = {
     "en": "https://donalupa.com/guides/murdoku-vs-dona-lupa/",
@@ -67,7 +67,7 @@ PAGES = {
             ("Structure", "One person per row and column; culprit and victim share an area alone", "One suspect per row, column and zone, plus truthful clues"),
             ("Stories", "Murder cases", "Cozy comic mysteries without bloody crimes"),
             ("Pace", "Choose a web, printable or book puzzle", "Tutorial, five difficulties, four worlds and a daily case"),
-            ("Access", "Free web play and printables; paid books", "Free download and easy cases; optional one-time full unlock"),
+            ("Access", "Free web play and printables; paid books", "Free download and easy cases; monthly subscription or lifetime unlock"),
         ],
         "tone_heading": "Tone and presentation change the experience",
         "tone_paragraphs": [
@@ -132,7 +132,7 @@ PAGES = {
         ],
         "table_caption": "Murdoku et Doña Lupa, point par point",
         "table_headers": ("Critère", "Murdoku", "Doña Lupa"),
-        "table_rows": [("Format", "Web, grilles imprimables et livres", "App pour iPhone"), ("Structure", "Une personne par ligne et colonne ; coupable et victime seuls dans une zone", "Un suspect par ligne, colonne et zone, plus des indices vrais"), ("Histoires", "Affaires de meurtre", "Mystères cosy et comiques, sans crime sanglant"), ("Rythme", "Choix d'une grille web, imprimée ou dans un livre", "Tutoriel, cinq difficultés, quatre univers et affaire quotidienne"), ("Accès", "Jeu web et imprimables gratuits ; livres payants", "Téléchargement et affaires faciles gratuits ; déblocage complet facultatif et unique")],
+        "table_rows": [("Format", "Web, grilles imprimables et livres", "App pour iPhone"), ("Structure", "Une personne par ligne et colonne ; coupable et victime seuls dans une zone", "Un suspect par ligne, colonne et zone, plus des indices vrais"), ("Histoires", "Affaires de meurtre", "Mystères cosy et comiques, sans crime sanglant"), ("Rythme", "Choix d'une grille web, imprimée ou dans un livre", "Tutoriel, cinq difficultés, quatre univers et affaire quotidienne"), ("Accès", "Jeu web et imprimables gratuits ; livres payants", "Téléchargement et affaires faciles gratuits ; abonnement mensuel ou achat à vie")],
         "tone_heading": "L'ambiance et la présentation changent l'expérience",
         "tone_paragraphs": [
             "Murdoku fonde son intrigue sur l'identification de la personne qui a tué la victime. Doña Lupa évite les crimes sanglants : son enquêtrice cherche plutôt qui a fait disparaître un déjeuner, trafiqué un dessert ou rendu un café suspect. Le choix ne dépend donc pas seulement de la difficulté, mais aussi de l'ambiance recherchée.",
@@ -190,7 +190,7 @@ PAGES = {
         ],
         "table_caption": "Murdoku e Doña Lupa, punto per punto",
         "table_headers": ("Aspetto", "Murdoku", "Doña Lupa"),
-        "table_rows": [("Formato", "Web, puzzle stampabili e libri", "App per iPhone"), ("Struttura", "Una persona per riga e colonna; colpevole e vittima soli in un'area", "Un sospetto per riga, colonna e zona, più indizi veri"), ("Storie", "Casi di omicidio", "Misteri comici e accoglienti, senza crimini cruenti"), ("Ritmo", "Scelta tra puzzle web, stampato o del libro", "Tutorial, cinque difficoltà, quattro mondi e caso giornaliero"), ("Accesso", "Gioco web e stampabili gratuiti; libri a pagamento", "Download e casi facili gratuiti; sblocco completo facoltativo una tantum")],
+        "table_rows": [("Formato", "Web, puzzle stampabili e libri", "App per iPhone"), ("Struttura", "Una persona per riga e colonna; colpevole e vittima soli in un'area", "Un sospetto per riga, colonna e zona, più indizi veri"), ("Storie", "Casi di omicidio", "Misteri comici e accoglienti, senza crimini cruenti"), ("Ritmo", "Scelta tra puzzle web, stampato o del libro", "Tutorial, cinque difficoltà, quattro mondi e caso giornaliero"), ("Accesso", "Gioco web e stampabili gratuiti; libri a pagamento", "Download e casi facili gratuiti; abbonamento mensile o acquisto a vita")],
         "tone_heading": "Atmosfera e presentazione cambiano l'esperienza",
         "tone_paragraphs": [
             "Murdoku costruisce la sua premessa intorno alla ricerca di chi ha ucciso la vittima. Doña Lupa evita i crimini cruenti: l'investigatrice può cercare chi ha fatto sparire un pranzo, manomesso un dolce o reso sospetto un caffè. La scelta non riguarda quindi solo la difficoltà, ma anche l'atmosfera che desideri.",
@@ -248,7 +248,7 @@ PAGES = {
         ],
         "table_caption": "Murdoku e Doña Lupa, ponto por ponto",
         "table_headers": ("Aspeto", "Murdoku", "Doña Lupa"),
-        "table_rows": [("Formato", "Web, puzzles para imprimir e livros", "App para iPhone"), ("Estrutura", "Uma pessoa por linha e coluna; culpado e vítima a sós numa área", "Um suspeito por linha, coluna e zona, mais pistas verdadeiras"), ("Histórias", "Casos de homicídio", "Mistérios cómicos e acolhedores, sem crimes sangrentos"), ("Ritmo", "Escolha entre puzzle web, impresso ou do livro", "Tutorial, cinco dificuldades, quatro mundos e caso diário"), ("Acesso", "Jogo web e imprimíveis gratuitos; livros pagos", "Download e casos fáceis gratuitos; desbloqueio total facultativo e único")],
+        "table_rows": [("Formato", "Web, puzzles para imprimir e livros", "App para iPhone"), ("Estrutura", "Uma pessoa por linha e coluna; culpado e vítima a sós numa área", "Um suspeito por linha, coluna e zona, mais pistas verdadeiras"), ("Histórias", "Casos de homicídio", "Mistérios cómicos e acolhedores, sem crimes sangrentos"), ("Ritmo", "Escolha entre puzzle web, impresso ou do livro", "Tutorial, cinco dificuldades, quatro mundos e caso diário"), ("Acesso", "Jogo web e imprimíveis gratuitos; livros pagos", "Download e casos fáceis gratuitos; subscrição mensal ou compra vitalícia")],
         "tone_heading": "O ambiente e a apresentação mudam a experiência",
         "tone_paragraphs": [
             "Murdoku constrói a premissa à volta da descoberta de quem matou a vítima. Doña Lupa evita crimes sangrentos: a detetive pode investigar quem fez desaparecer um almoço, alterou uma sobremesa ou tornou um café suspeito. A escolha não depende apenas da dificuldade, mas também do ambiente que procuras.",

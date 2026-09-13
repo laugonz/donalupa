@@ -30,53 +30,133 @@
   <meta name="twitter:description" content="A cozy logic mystery with honest clues and ridiculous culprits.">
   <meta name="twitter:image" content="https://donalupa.com/assets/gameplay.jpg">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "SoftwareApplication",
-        "name": "Doña Lupa: Murder Sudoku",
-        "description": "A cozy deduction sudoku with funny mystery cases, honest clues and one unique solution.",
-        "applicationCategory": "GameApplication",
-        "applicationSubCategory": "Puzzle game",
-        "operatingSystem": "iOS",
-        "inLanguage": ["en", "es", "it", "pt-PT", "fr"],
-        "image": "https://donalupa.com/assets/app-icon.png",
-        "url": "https://donalupa.com/",
-        "downloadUrl": "https://apps.apple.com/app/id6801481670",
-        "installUrl": "https://apps.apple.com/app/id6801481670",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "description": "Free cases with an optional one-time unlock. No subscription."
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Doña Lupa: Murder Sudoku",
+      "description": "A cozy deduction sudoku with funny mystery cases, honest clues and one unique solution.",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Puzzle game",
+      "operatingSystem": "iOS",
+      "inLanguage": [
+        "en",
+        "es",
+        "it",
+        "pt-PT",
+        "fr"
+      ],
+      "image": "https://donalupa.com/assets/app-icon.png",
+      "url": "https://donalupa.com/",
+      "downloadUrl": "https://apps.apple.com/app/id6801481670",
+      "installUrl": "https://apps.apple.com/app/id6801481670",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free easy cases. Optional monthly subscription or lifetime purchase for full access. No ads."
       },
-      {
-        "@type": "WebSite",
-        "name": "Doña Lupa",
-        "url": "https://donalupa.com/",
-        "inLanguage": "en"
-      }
-    ]
-  }
-  </script>
+      "@id": "https://donalupa.com/#app",
+      "sameAs": "https://apps.apple.com/app/id6801481670"
+    },
+    {
+      "@type": "WebSite",
+      "name": "Doña Lupa",
+      "url": "https://donalupa.com/",
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type": "Question", "name": "Is Doña Lupa really sudoku?", "acceptedAnswer": {"@type": "Answer", "text": "It uses sudoku's one-per-row, one-per-column and one-per-zone rule, but replaces numbers with illustrated suspects and adds truthful story clues. You never need to calculate anything."}},
-      {"@type": "Question", "name": "Do I need to know number sudoku first?", "acceptedAnswer": {"@type": "Answer", "text": "No. The interactive first case teaches rows, columns, zones, notes and clues as you use them."}},
-      {"@type": "Question", "name": "What are the basic deduction sudoku rules?", "acceptedAnswer": {"@type": "Answer", "text": "Place every suspect once in each row, column and outlined zone. Combine those constraints with the case clues until every cell is determined."}},
-      {"@type": "Question", "name": "Are all the clues true?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every clue in a Doña Lupa case is true, so a contradiction means an earlier placement needs another look."}},
-      {"@type": "Question", "name": "Do I have to guess when I get stuck?", "acceptedAnswer": {"@type": "Answer", "text": "No. Keep both candidates open, inspect their intersecting row, column and zone, and return to clues that gained meaning after your last placement."}},
-      {"@type": "Question", "name": "Are the mysteries scary or violent?", "acceptedAnswer": {"@type": "Answer", "text": "No. The cases are cozy comic mysteries about missing lunches, suspicious coffee and other very small crimes."}},
-      {"@type": "Question", "name": "Does every case have one solution?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The clues and board constraints are designed to lead to one checkable final arrangement."}},
-      {"@type": "Question", "name": "Can I play Doña Lupa for free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Easy cases are free in all four worlds, including a fresh daily case. One optional purchase unlocks the full collection; there are no ads or subscriptions."}}
-    ]
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which iPhone game combines sudoku rules with detective puzzles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doña Lupa combines one suspect per row, column and zone with truthful story clues. You solve self-contained deduction puzzles with illustrated characters and comic mystery endings. It fits players who enjoy sudoku-style constraints and want a story around the logic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which cozy mystery puzzle can I play without ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doña Lupa offers non-violent mysteries with humor, four worlds and a fresh daily case on iPhone. Easy cases are free in every world and there are no ads. Full access is available through a monthly subscription or a lifetime purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Doña Lupa really sudoku?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It uses sudoku's one-per-row, one-per-column and one-per-zone rule, but replaces numbers with illustrated suspects and adds truthful story clues. You never need to calculate anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to know number sudoku first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The interactive first case teaches rows, columns, zones, notes and clues as you use them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the basic deduction sudoku rules?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Place every suspect once in each row, column and outlined zone. Combine those constraints with the case clues until every cell is determined."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are all the clues true?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every clue in a Doña Lupa case is true, so a contradiction means an earlier placement needs another look."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to guess when I get stuck?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Keep both candidates open, inspect their intersecting row, column and zone, and return to clues that gained meaning after your last placement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the mysteries scary or violent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The cases are cozy comic mysteries about missing lunches, suspicious coffee and other very small crimes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does every case have one solution?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The clues and board constraints are designed to lead to one checkable final arrangement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play Doña Lupa for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Easy cases are free in all four worlds. Choose a monthly subscription or a lifetime purchase for full access. There are no ads."
+      }
+    }
+  ]
+}
+</script>
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
   </script>
@@ -113,7 +193,7 @@
         <ul class="proof-list">
           <li>Easy cases free</li>
           <li>No ads</li>
-          <li>No subscription</li>
+          <li>Daily case</li>
         </ul>
       </div>
       <div class="hero-art">
@@ -174,7 +254,7 @@
       <div class="worlds-copy">
         <p class="eyebrow">Four worlds, more than eighty cases</p>
         <h2>Crime has never been this inconvenient.</h2>
-        <p>Start with free cases in every world. Unlock the complete collection once — no subscription, no ads — and new cases can arrive without an app update.</p>
+        <p>Start with free cases in every world. Choose monthly access or a lifetime unlock for the complete collection. There are no ads, and new cases can arrive without an app update.</p>
         <a class="button button-dark" href="https://apps.apple.com/app/id6801481670">Open the first case <span aria-hidden="true">↗</span></a>
       </div>
       <ol class="world-list">
@@ -234,14 +314,16 @@
         <div><p class="eyebrow">The interrogation room</p><h2>Questions with<br>straight answers.</h2></div>
       </div>
       <div class="faq-list">
-        <details><summary>Is Doña Lupa really sudoku?</summary><p>It uses sudoku's one-per-row, one-per-column and one-per-zone rule, but replaces numbers with illustrated suspects and adds truthful story clues. You never need to calculate anything.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">Learn how deduction sudoku works →</a></details>
+        <details><summary>Which iPhone game combines sudoku rules with detective puzzles?</summary><p>Doña Lupa combines one suspect per row, column and zone with truthful story clues. You solve self-contained deduction puzzles with illustrated characters and comic mystery endings. It fits players who enjoy sudoku-style constraints and want a story around the logic.</p></details>
+<details><summary>Which cozy mystery puzzle can I play without ads?</summary><p>Doña Lupa offers non-violent mysteries with humor, four worlds and a fresh daily case on iPhone. Easy cases are free in every world and there are no ads. Full access is available through a monthly subscription or a lifetime purchase.</p></details>
+<details><summary>Is Doña Lupa really sudoku?</summary><p>It uses sudoku's one-per-row, one-per-column and one-per-zone rule, but replaces numbers with illustrated suspects and adds truthful story clues. You never need to calculate anything.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">Learn how deduction sudoku works →</a></details>
         <details><summary>Do I need to know number sudoku first?</summary><p>No. The interactive first case teaches rows, columns, zones, notes and clues as you use them.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">Read the beginner guide →</a></details>
         <details><summary>What are the basic deduction sudoku rules?</summary><p>Place every suspect once in each row, column and outlined zone. Combine those constraints with the case clues until every cell is determined.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">See the rules step by step →</a></details>
         <details><summary>Are all the clues true?</summary><p>Yes. Every clue in a Doña Lupa case is true, so a contradiction means an earlier placement needs another look.</p><a class="faq-more" href="/guides/detective-logic-grid-puzzles/">Learn how to cross clues →</a></details>
         <details><summary>Do I have to guess when I get stuck?</summary><p>No. Keep both candidates open, inspect their intersecting row, column and zone, and return to clues that gained meaning after your last placement.</p><a class="faq-more" href="/guides/detective-logic-grid-puzzles/">Use the no-guessing method →</a></details>
         <details><summary>Are the mysteries scary or violent?</summary><p>No. The cases are cozy comic mysteries about missing lunches, suspicious coffee and other very small crimes.</p><a class="faq-more" href="/guides/murder-mystery-logic-puzzles/">Explore cozy logic mysteries →</a></details>
         <details><summary>Does every case have one solution?</summary><p>Yes. The clues and board constraints are designed to lead to one checkable final arrangement.</p><a class="faq-more" href="/guides/murder-mystery-logic-puzzles/">See what makes a puzzle fair →</a></details>
-        <details><summary>Can I play Doña Lupa for free?</summary><p>Yes. Easy cases are free in all four worlds, including a fresh daily case. One optional purchase unlocks the full collection; there are no ads or subscriptions.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">Meet your first free case →</a></details>
+        <details><summary>Can I play Doña Lupa for free?</summary><p>Yes. Easy cases are free in all four worlds. Choose a monthly subscription or a lifetime purchase for full access. There are no ads.</p><a class="faq-more" href="/guides/how-to-play-deduction-sudoku/">Meet your first free case →</a></details>
       </div>
     </section>
 

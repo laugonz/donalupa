@@ -6,16 +6,15 @@
 - Bundle ID: `com.laugonz.casegrid`
 - Seller: Laura Gonzalez Lopez
 - Live names: “Doña Lupa: Murder Sudoku” (US) and “Doña Lupa: Sudoku de Misterio” (Spain and Mexico)
-- Version audited: `1.1.0` on 2026-09-01
+- Current version audited: `1.3.0` on 2026-09-13
 - Platforms: iPhone / iOS
 - Categories: Games / Board / Puzzle
-- Live App Store languages: English and Spanish
-- Prepared app languages for the next binary: English, Spanish, Italian, Portuguese (Portugal) and French
-- Store price: free download; easy cases are free and the full collection is an optional one-time unlock
+- Published App Store languages: English, Spanish, Italian, Portuguese and French
+- Store access: free download and easy cases; monthly subscription or lifetime purchase for the full collection. No ads.
 - Primary CTA: `https://apps.apple.com/app/id6801481670`
 - Google Play: no listing was found for this bundle ID during the audit
 
-## Raw App Store listing copy
+## Historical App Store listing copy (1.1.0, 2026-09-01)
 
 The following text is preserved verbatim from the live listings before any website rewrite.
 
@@ -204,8 +203,8 @@ Use `assets/app-icon.png` as a visual style reference for all seven generations.
 
 ## Content and claim guardrails
 
-- Never claim unlimited free access: easy cases are free; the full collection is a one-time unlock.
-- Never imply a subscription or advertise one: there is none.
+- Never claim unlimited free access: easy cases are free; the full collection requires monthly or lifetime access.
+- Describe current full access as monthly subscription or lifetime purchase; do not repeat the former no-subscription claim.
 - Do not invent case counts, ratings, awards, player counts or future release dates.
 - Do not publish aggregate-rating schema until the listing has enough stable review volume to be representative.
 - `FAQPage` structured data is allowed only when every question and answer is visibly present and matches the markup.
@@ -226,3 +225,7 @@ Use `assets/app-icon.png` as a visual style reference for all seven generations.
 ## Visual direction
 
 Warm paper, dark brown ink, orange evidence marks, rounded editorial typography and real illustrated suspects. The site should feel like a playful case file, not a generic SaaS landing page. Guide images should extend this world with distinct editorial scenes, not imitate the app UI or add illegible generated text.
+
+## 13 September 2026 discovery refresh
+
+The current App Store listing (1.3.0) says 86 cases, four worlds, a daily case, monthly access or a lifetime unlock, and no ads. Historical quotations above are not the current access contract. Five localized homepages and the five independent comparison tables now match that access model. Two product-selection FAQs per homepage and six English/Spanish guide openings explain the game to players choosing an iPhone puzzle app. Existing images, puzzle rules, URL structure and trademark notices are preserved. FAQ schema is regenerated from the visible answers and checked for parity.
