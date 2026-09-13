@@ -86,3 +86,22 @@ game.querySelectorAll('[data-accuse]').forEach(button => button.addEventListener
 }));
 draw();
 game.querySelectorAll('[data-needs-js]').forEach(node => { node.hidden = false; });
+
+// The app centers one white nameplate on each room's top-row span, then
+// clamps it inside the board. Measure the translated text to avoid truncation.
+const map = game.querySelector('[data-case-map]');
+const plates = [...map.querySelectorAll('[data-room-plate]')];
+function layoutRoomPlates() {
+  const width = map.clientWidth;
+  if (!width) return;
+  const cell = width / puzzle.size;
+  map.style.setProperty('--plate-font', `${Math.max(11, cell * .18)}px`);
+  plates.forEach(plate => {
+    const half = plate.offsetWidth / 2;
+    const x = Math.min(Math.max(Number(plate.dataset.plateCenter) * cell, half + 2), width - half - 2);
+    plate.style.left = `${x}px`;
+    plate.style.top = `${Number(plate.dataset.plateRow) * cell}px`;
+  });
+}
+new ResizeObserver(layoutRoomPlates).observe(map);
+layoutRoomPlates();

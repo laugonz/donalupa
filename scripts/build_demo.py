@@ -12,12 +12,26 @@ START, END = '<!-- case-demo:start -->', '<!-- case-demo:end -->'
 people = PUZZLE['suspects'] + [PUZZLE['victim']]
 zone_cells = {tuple(cell): zone['id'] for zone in PUZZLE['zones'] for cell in zone['cells']}
 
+def floor_kind(zone, locale, index):
+    # Port of ZoneTexture.FloorKind.of in the app, using the seed's language fallback.
+    name = zone['name'].get(locale, zone['name']['en']).lower()
+    groups = [
+        ('tiles', ['cocina', 'kitchen', 'scullery']),
+        ('parquet', ['salón', 'drawing', 'living', 'sala']),
+        ('carpet', ['biblioteca', 'library', 'despacho', 'office', 'escritorio', 'estudio', 'reuniones', 'jefe']),
+        ('grass', ['jardín', 'garden', 'patio', 'invernadero']),
+        ('dirt', ['establos', 'stables', 'granero', 'barn']),
+        ('stone', ['recepción', 'reception', 'hall', 'vestíbulo', 'entrada'])]
+    return next((kind for kind, words in groups if any(word in name for word in words)),
+                ['dots', 'parquet', 'carpet', 'tiles'][index % 4])
+
 def portrait(person):
     if person['id'] == 'case_item':
         return '<span class="lunch-piece" data-portrait aria-hidden="true">🥡</span>'
     return f'<img src="/assets/demo/sus_{person["id"]}.png" alt="" width="46" height="46" data-portrait>'
 
 for locale, c in COPY.items():
+    assert len(c['roomPlates']) == len(PUZZLE['zones']), locale
     c = {**c, 'store': c['store'] + '?pt=1201782&ct=donalupa_web_demo&mt=8'}
     canonical = DOMAIN + c['path']
     alternates = ''.join(f'<link rel="alternate" hreflang="{other["lang"]}" href="{DOMAIN}{other["path"]}">' for other in COPY.values())
@@ -33,7 +47,10 @@ for locale, c in COPY.items():
     for row in range(PUZZLE['size']):
         for col in range(PUZZLE['size']):
             zone = zone_cells[(row, col)]
-            room = c['rooms'][next(i for i, z in enumerate(PUZZLE['zones']) if z['id'] == zone)]
+            zone_index = next(i for i, z in enumerate(PUZZLE['zones']) if z['id'] == zone)
+            room = c['rooms'][zone_index]
+            floor = floor_kind(PUZZLE['zones'][zone_index], locale, zone_index)
+            assert floor in {'carpet', 'stone', 'parquet', 'dots'}, (locale, zone, floor)
             edges = []
             if row == 0:
                 edges.append('cell-first-row')
@@ -46,14 +63,22 @@ for locale, c in COPY.items():
             cell_class = f'case-cell zone-{zone} ' + ' '.join(edges)
             scenery = next((s for s in PUZZLE['scenery'] if s['row'] == row and s['col'] == col), None)
             blocked = scenery and not scenery['occupiable']
+            if scenery and scenery['occupiable']:
+                cell_class += ' is-occupiable'
             label = c['scenery'][scenery['key']] if scenery else c['empty']
             image = f'<img class="cell-scenery" src="/assets/demo/obj_{scenery["key"]}.png" alt="" width="64" height="64">' if scenery else ''
-            contents = f'<span class="cell-coordinate" aria-hidden="true">{row + 1}·{col + 1}</span>{image}<span class="cell-piece" data-piece></span><span class="cell-room" aria-hidden="true">{e(room)}</span>'
+            contents = f'<span class="cell-floor floor-{floor}" aria-hidden="true"></span>{image}<span class="cell-piece" data-piece></span>'
             if blocked:
                 board.append(f'<div class="{cell_class} is-blocked" role="img" aria-label="{e(c["row"])} {row + 1}, {e(c["col"])} {col + 1}. {e(room)}. {e(label)}. {e(c["blocked"])}">{contents}</div>')
             else:
                 board.append(f'<button type="button" class="{cell_class}" data-cell="{row},{col}" data-room="{e(room)}" data-label="{e(label)}" aria-label="{e(c["row"])} {row + 1}, {e(c["col"])} {col + 1}. {e(room)}. {e(label)}">{contents}</button>')
-    legend = ''.join(f'<span><i class="zone-{zone["id"]}" aria-hidden="true"></i>{e(c["rooms"][i])}</span>' for i, zone in enumerate(PUZZLE['zones']))
+    plates = []
+    for i, zone in enumerate(PUZZLE['zones']):
+        row, col = min(zone['cells'])
+        span = 1
+        while [row, col + span] in zone['cells']:
+            span += 1
+        plates.append(f'<span class="zone-plate" data-room-plate="{zone["id"]}" data-plate-row="{row}" data-plate-center="{col + span / 2}">{e(c["roomPlates"][i])}</span>')
     clues = ''.join(f'<li data-clue>{e(clue)}</li>' for clue in c['clues'])
     accusations = ''.join(f'<button type="button" class="accuse-choice" data-accuse="{person["id"]}">{e(c["characters"][i])}</button>' for i, person in enumerate(PUZZLE['suspects']))
     solution = ''.join(f'<li>{e(step)}</li>' for step in c['solution'])
@@ -75,7 +100,7 @@ for locale, c in COPY.items():
     <div class="case-tray" role="group" aria-label="{e(c['pieces'])}">{tray}</div>
     <p class="current-clue" data-current-clue>{e(c['clues'][0])}</p>
     <div class="board-heading"><span>{e(c['board'])}</span><span class="case-progress" data-progress aria-hidden="true">0 / 4</span></div>
-    <div class="case-board" role="group" aria-label="{e(c['board'])}">{''.join(board)}</div><div class="room-legend">{legend}</div>
+    <div class="case-map" data-case-map><div class="case-board" role="group" aria-label="{e(c['board'])}">{''.join(board)}</div>{''.join(plates)}</div>
     <div class="game-tools"><button type="button" data-hint>{e(c['hint'])}</button><button type="button" data-undo>{e(c['undo'])}</button><button type="button" data-reset>{e(c['reset'])}</button></div>
     <p class="game-status" role="status" aria-live="polite" aria-atomic="true" data-status>{e(c['choose'])}</p>
   </div>

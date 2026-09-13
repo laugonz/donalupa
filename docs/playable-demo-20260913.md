@@ -58,3 +58,27 @@ Laura's mobile screenshot showed that the pastel colors and small legend did not
 | Rules referred only to colored rooms | Five localized rules now explain room names and the difference between thick and thin dividers. |
 
 Validation: existing five engine/copy tests pass. Browser checks cover all five languages at 320 px, including the adjusted Portuguese label; all 16 room names fit without clipping. Spanish 390 px also fits. A full keyboard solution, victory, reset and a hint were checked; occupied cells retain room names and pieces do not overlap the label area. The release verifier independently checks all 80 labels and generated room boundaries against case data. Production evidence is in the workspace's docs/aso/donalupa-room-labels-2026-09-13 folder.
+
+## Native room design follow-up — 13 September 2026
+
+Laura then asked for the board to look like the app. This supersedes the per-cell room names and 5/6 board from the previous follow-up. The web now uses one white serif nameplate per room on its upper boundary, the native palette and floor patterns, and square cells. Reference: the existing app capture assets/es-gameplay.jpg and CaseGrid's GridView.swift, Theme.swift, ZoneWalls.swift and ZoneTexture.swift. The inspected working-copy GridView changes concern irregular boards; the palette, room plates and textures used here match its committed implementation. No native files were edited or built.
+
+### Room presentation
+
+| Before | After |
+| --- | --- |
+| Sixteen repeated cell labels and a separate legend | Four white rounded nameplates, with a 1.5 px chocolate border, small-caps serif type and 0.4 px tracking, matching the app's room-label design. Full localized titles are supplied in roomPlates. |
+| Names sat below each illustration | Plates sit on each room's topmost contiguous row. The generator derives the anchor/span from case data; ResizeObserver positions the measured text and keeps it inside the board after resizing. Font size follows the app's max(11, cell × 0.18). |
+| Green desks, yellow reception, blue break room and pale rose office | Theme.swift palette by original zone index: cream (97/93/84%), slate (64/71/79%), sage (76/85/66%) and rose (76/55/52%). |
+| Flat fills | Four small procedural SVG floor textures port carpet, stone, dots and parquet from ZoneTexture. Language selection uses the original seed's language fallback; occupiable furniture cells have the app's 32% white floor wash. |
+| Generic dark dividers | Native chocolate ink (24/13/6%), 3 px room boundaries at 80% opacity and 1 px inner dividers at 16%. Outer frame is 3 px, radius 14 px, with the app's soft lower shadow. |
+
+### Board proportions and content
+
+| Before | After |
+| --- | --- |
+| Tall 5/6 board with bottom text strips and visible coordinates | Square board; coordinates remain in accessible names. Map spacing reserves space around the boundary plates. |
+| Art fitted around room labels; blocked furniture faded | Unoccupied scenery is centered at 60% cell size and full opacity; after placement it shrinks to 30% at the bottom right at 65% opacity, as in GridView. Portraits use the available 84% central area. |
+| Rules described a name inside every cell | All five translations now explain the white room plates. The original clues, solution, game actions and Apple campaigns remain the same. |
+
+Validation: existing five tests, syntax and diff checks pass; generated output is idempotent. At 320 px all five languages have four complete, non-overlapping plates within the board. ES390 was compared visually to the app capture; the Portuguese case was completed using the keyboard through victory and reset. The board responds to a desktop resize. Public verification and source checks are recorded under workspace docs/aso/donalupa-native-board-2026-09-13.
