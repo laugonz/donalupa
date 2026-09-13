@@ -82,3 +82,15 @@ Laura then asked for the board to look like the app. This supersedes the per-cel
 | Rules described a name inside every cell | All five translations now explain the white room plates. The original clues, solution, game actions and Apple campaigns remain the same. |
 
 Validation: existing five tests, syntax and diff checks pass; generated output is idempotent. At 320 px all five languages have four complete, non-overlapping plates within the board. ES390 was compared visually to the app capture; the Portuguese case was completed using the keyboard through victory and reset. The board responds to a desktop resize. Public verification and source checks are recorded under workspace docs/aso/donalupa-native-board-2026-09-13.
+
+## Homepage entry follow-up — 13 September 2026
+
+The browser case was reachable through a plain hero link and a preview lower down, but Laura could not find it. The homepage now names the browser action explicitly and keeps it in the sticky header in all five languages.
+
+| Before | After |
+| --- | --- |
+| No play action in the header; mobile showed only the language link | A dark localized play button remains visible next to the language switcher, with a 44 px touch target. At tablet widths the informational links collapse so the play action fits. |
+| Underlined “Probar un caso aquí” beside the App Store button | Outlined “Jugar gratis en la web” button, distinguishing the browser destination. The preview further down uses the same clear label. |
+| No responsive play-button layout | Compact header spacing and brand type at 320 px; explicit hover, pressed, keyboard focus and reduced-motion states. |
+
+`content/demo-copy.json` supplies both labels; `scripts/build_demo.py` regenerates the header, hero and preview links idempotently. The App Store CTA and game behavior are unchanged. Existing five tests and the full static release verifier pass. Browser checks confirm header-to-initialized-game navigation in all five languages at 320 px, ES390 visual layout, EN1280 desktop and EN768 tablet layout, and hero navigation with Enter. Public checks are recorded in workspace `docs/aso/donalupa-demo-entry-2026-09-13`.

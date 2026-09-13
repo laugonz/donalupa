@@ -127,8 +127,16 @@ for locale, c in COPY.items():
         marker = re.search(r'<section class="section container" id="[^"]+">', source)
         assert marker, locale
         source = source[:marker.start()] + preview + '\n\n    ' + source[marker.start():]
-    # The secondary hero CTA is the direct route to the playable demonstration.
-    source, count = re.subn(r'(<div class="cta-row">.*?<a class="text-link" href=")[^"]+("[^>]*>).*?</a>', lambda m: m[1] + c['path'] + m[2] + e(c['homeLink']) + ' <span aria-hidden="true">→</span></a>', source, count=1, flags=re.S)
+    # Keep the browser case visible in the sticky navigation, including on mobile.
+    nav_play = f'<a class="demo-nav-play" href="{c["path"]}">{e(c["navPlay"])}</a>'
+    if 'class="demo-nav-play"' in source:
+        source, count = re.subn(r'<a class="demo-nav-play"[^>]*>.*?</a>', lambda _: nav_play, source, count=1, flags=re.S)
+    else:
+        source, count = re.subn(r'(<header class="site-header">.*?)(<a class="language-link")', lambda m: m[1] + nav_play + m[2], source, count=1, flags=re.S)
+    assert count == 1, locale
+    # Regenerate both the original text link and the promoted button idempotently.
+    hero_play = f'<a class="button demo-hero-play" href="{c["path"]}">{e(c["homeLink"])} <span aria-hidden="true">→</span></a>'
+    source, count = re.subn(r'(<div class="cta-row">.*?)<a class="(?:text-link|button demo-hero-play)"[^>]*>.*?</a>', lambda m: m[1] + hero_play, source, count=1, flags=re.S)
     assert count == 1, locale
     if 'href="/demo.css"' not in source:
         source = source.replace('</head>', '<link rel="stylesheet" href="/demo.css">\n</head>', 1)
