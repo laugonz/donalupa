@@ -1,5 +1,12 @@
 # Doña Lupa
 
+## Play a browser example
+
+- One free case adapted from the app's missing-lunch story can be played without an account or download: https://donalupa.com/play/
+- Spanish: https://donalupa.com/es/jugar/ ; French: https://donalupa.com/fr/jouer/ ; Italian: https://donalupa.com/it/gioca/ ; Portuguese: https://donalupa.com/pt/jogar/
+- Place three suspects and the lunchbox using the original clues, then identify the suspect alone with the lunchbox. Hints, undo, restart and a written solution are provided.
+- This is one browser demonstration, not the full iPhone game or its daily case. The app's monthly and lifetime access terms remain unchanged.
+
 > Doña Lupa is a cozy deduction-sudoku game for iPhone: place illustrated suspects one per row, column and outlined zone, then use truthful story clues to solve each comic mystery.
 
 ## Product

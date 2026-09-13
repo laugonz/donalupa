@@ -1,0 +1,350 @@
+{
+  "clues": [
+    {
+      "args": [
+        "s_accountant",
+        "0",
+        "2"
+      ],
+      "id": "c1",
+      "text": {
+        "en": "She was standing at the water cooler.",
+        "es": "Estaba apoyada en la fuente de agua."
+      },
+      "type": "atCell"
+    },
+    {
+      "args": [
+        "s_marketing",
+        "desks"
+      ],
+      "id": "c2",
+      "text": {
+        "en": "She was in the desks.",
+        "es": "Estaba en los escritorios."
+      },
+      "type": "inZone"
+    },
+    {
+      "args": [
+        "s_sales",
+        "2",
+        "1"
+      ],
+      "id": "c3",
+      "text": {
+        "en": "He was standing at the vending machine.",
+        "es": "Estaba apoyado en la máquina expendedora."
+      },
+      "type": "atCell"
+    }
+  ],
+  "culprit": "s_sales",
+  "difficulty": 1,
+  "id": "office_002",
+  "intro": {
+    "en": "The lentil tupperware has vanished from the shared fridge. It had its owner's name on three labels: this is personal. Line up the alibis and it will turn up: whoever was left alone with it ate the lot.",
+    "es": "El tupper de lentejas ha desaparecido de la nevera común. Llevaba el nombre escrito en tres etiquetas: esto es personal. Cuadra las coartadas y aparecerá: se lo comió quien se quedara a solas con él."
+  },
+  "reveal": {
+    "en": "It was the sales rep, who ended up alone with it in the break area, ate the whole thing and didn't even wash the container.",
+    "es": "Fue el comercial, que se quedó a solas con él en la zona de descanso, se lo comió enterito y encima lo dejó sin fregar."
+  },
+  "scenery": [
+    {
+      "col": 2,
+      "emoji": "🚰",
+      "key": "water_cooler",
+      "label": {
+        "en": "the water cooler",
+        "es": "la fuente de agua"
+      },
+      "occupiable": true,
+      "row": 0
+    },
+    {
+      "col": 3,
+      "emoji": "🧥",
+      "key": "coat_rack",
+      "label": {
+        "en": "the coat rack",
+        "es": "el perchero"
+      },
+      "occupiable": false,
+      "row": 0
+    },
+    {
+      "col": 0,
+      "emoji": "♻️",
+      "key": "recycling_bin",
+      "label": {
+        "en": "the recycling bin",
+        "es": "el contenedor de reciclaje"
+      },
+      "occupiable": false,
+      "row": 1
+    },
+    {
+      "col": 1,
+      "emoji": "🧥",
+      "key": "coat_rack",
+      "label": {
+        "en": "the coat rack",
+        "es": "el perchero"
+      },
+      "occupiable": false,
+      "row": 1
+    },
+    {
+      "col": 2,
+      "emoji": "🖊️",
+      "key": "pen_drawer",
+      "label": {
+        "en": "the pen drawer",
+        "es": "el cajón de los bolis"
+      },
+      "occupiable": false,
+      "row": 1
+    },
+    {
+      "col": 3,
+      "emoji": "🧍",
+      "key": "standing_desk",
+      "label": {
+        "en": "the standing desk",
+        "es": "el escritorio elevable"
+      },
+      "occupiable": true,
+      "row": 1
+    },
+    {
+      "col": 0,
+      "emoji": "♨️",
+      "key": "microwave",
+      "label": {
+        "en": "the microwave",
+        "es": "el microondas"
+      },
+      "occupiable": false,
+      "row": 2
+    },
+    {
+      "col": 1,
+      "emoji": "🥤",
+      "key": "vending_machine",
+      "label": {
+        "en": "the vending machine",
+        "es": "la máquina expendedora"
+      },
+      "occupiable": true,
+      "row": 2
+    },
+    {
+      "col": 2,
+      "emoji": "🔍",
+      "key": "scanner",
+      "label": {
+        "en": "the scanner",
+        "es": "el escáner"
+      },
+      "occupiable": false,
+      "row": 2
+    },
+    {
+      "col": 3,
+      "emoji": "📋",
+      "key": "whiteboard",
+      "label": {
+        "en": "the whiteboard",
+        "es": "la pizarra"
+      },
+      "occupiable": false,
+      "row": 2
+    },
+    {
+      "col": 0,
+      "emoji": "☕",
+      "key": "coffee_machine",
+      "label": {
+        "en": "the coffee machine",
+        "es": "la máquina de café"
+      },
+      "occupiable": true,
+      "row": 3
+    },
+    {
+      "col": 3,
+      "emoji": "📋",
+      "key": "whiteboard",
+      "label": {
+        "en": "the whiteboard",
+        "es": "la pizarra"
+      },
+      "occupiable": false,
+      "row": 3
+    }
+  ],
+  "size": 4,
+  "solution": {
+    "case_item": [
+      3,
+      0
+    ],
+    "s_accountant": [
+      0,
+      2
+    ],
+    "s_marketing": [
+      1,
+      3
+    ],
+    "s_sales": [
+      2,
+      1
+    ]
+  },
+  "suspects": [
+    {
+      "emoji": "👨‍💼",
+      "gender": "woman",
+      "id": "s_accountant",
+      "name": {
+        "en": "the accountant",
+        "es": "la contable"
+      }
+    },
+    {
+      "emoji": "👩‍🎨",
+      "gender": "woman",
+      "id": "s_marketing",
+      "name": {
+        "en": "the marketing manager",
+        "es": "la de marketing"
+      }
+    },
+    {
+      "emoji": "😎",
+      "gender": "man",
+      "id": "s_sales",
+      "name": {
+        "en": "the sales rep",
+        "es": "el comercial"
+      }
+    }
+  ],
+  "title": {
+    "en": "The Case of the Missing Tupperware",
+    "es": "El caso del tupper desaparecido"
+  },
+  "victim": {
+    "emoji": "🥡",
+    "gender": "unspecified",
+    "id": "case_item",
+    "name": {
+      "en": "the lentil tupperware",
+      "es": "el tupper de lentejas"
+    }
+  },
+  "zones": [
+    {
+      "cells": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "id": "desks",
+      "name": {
+        "en": "the desks",
+        "es": "los escritorios"
+      }
+    },
+    {
+      "cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "id": "lobby",
+      "name": {
+        "en": "the lobby",
+        "es": "la recepción"
+      }
+    },
+    {
+      "cells": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "id": "break_area",
+      "name": {
+        "en": "the break area",
+        "es": "la zona de descanso"
+      }
+    },
+    {
+      "cells": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "id": "boss_office",
+      "name": {
+        "en": "the boss's office",
+        "es": "el despacho del jefe"
+      }
+    }
+  ]
+}
