@@ -34,3 +34,27 @@ Edit `content/demo-copy.json` or the case, then run `python3 scripts/build_demo.
 - No-JavaScript fallback is verified in initial HTML, not with JavaScript disabled in the browser. Nine older translated guides use the homepage as `x-default`; that pre-existing pattern is outside this demo change. New demo pages have fully reciprocal alternatives including `x-default`.
 
 Campaign parameters reuse provider token `1201782`. Apple's reporting thresholds and delay apply; a blank report does not establish zero downloads. Source: [Apple campaign links documentation](https://developer.apple.com/help/app-store-connect-analytics/acquisition/campaign-links). Publication does not establish a conversion improvement or increased AI recommendations.
+
+## Room identification follow-up — 13 September 2026
+
+Laura's mobile screenshot showed that the pastel colors and small legend did not make room membership clear enough. All 16 cells now name their room, including occupied and furniture cells. The existing accessible coordinate/room labels remain intact. Room boundaries are calculated from adjacent cells in the original case; thin lines within a room and thick lines between rooms communicate the shape without relying on color. The original case and game engine are unchanged.
+
+### Visible room identity and boundaries
+
+| Before | After |
+| --- | --- |
+| Room names appeared only in a small legend | scripts/build_demo.py adds a localized .cell-room label to every cell in all five languages. Labels remain outside the piece slot so placing a suspect cannot hide them. |
+| Every cell had the same thick outline and rounded corners | The generator compares the top/left neighbors' room IDs. demo.css renders shared-room dividers at 1 px and room boundaries at 3 px; cell corners are square inside the rounded board. |
+| Similar pastel fills | Slightly stronger green, yellow, blue and rose room fills provide a secondary cue alongside names and borders. |
+| Legend was 11 px with 12 px swatches | It is now 12 px with 14 px swatches and wider vertical spacing. |
+
+### Room for text and illustrations
+
+| Before | After |
+| --- | --- |
+| Square board, artwork centered in each square | Board aspect ratio is 5 / 6, keeping cells wide enough to tap and making space for room labels. This supersedes the square-cell measurements from the initial release above. |
+| Artwork could occupy the future text area | Scenery and pieces now reserve a bottom label strip; suspect portraits retain their square proportions and never overlap room text. |
+| Only small coordinate text | Coordinates have slightly stronger contrast; room names use bold 10 px type on the narrowest screens and 11 px from 380 px, up to two lines, with 26 px reserved height and slight negative letter spacing to fit Portuguese labels. |
+| Rules referred only to colored rooms | Five localized rules now explain room names and the difference between thick and thin dividers. |
+
+Validation: existing five engine/copy tests pass. Browser checks cover all five languages at 320 px, including the adjusted Portuguese label; all 16 room names fit without clipping. Spanish 390 px also fits. A full keyboard solution, victory, reset and a hint were checked; occupied cells retain room names and pieces do not overlap the label area. The release verifier independently checks all 80 labels and generated room boundaries against case data. Production evidence is in the workspace's docs/aso/donalupa-room-labels-2026-09-13 folder.

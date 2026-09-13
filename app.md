@@ -233,3 +233,5 @@ The current App Store listing (1.3.0) says 86 cases, four worlds, a daily case, 
 ## 13 September 2026 playable browser case
 
 Five localized homepages link to one free adapted case: /play/, /es/jugar/, /fr/jouer/, /it/gioca/ and /pt/jogar/. The original office_002 case and app illustrations drive the demo. Every piece including the lunch has a distinct row and column; rooms support clues and the culprit deduction. Do not describe this case as one piece per room, the whole app or a daily web game. Edit content/demo-copy.json and regenerate with scripts/build_demo.py; validate the engine with node --test scripts/demo.test.mjs. Demo Apple links use donalupa_web_demo. Source, interface review and validation: docs/playable-demo-20260913.md.
+
+Room identification update: every browser-demo cell now shows its localized room name. Thick boundaries separate rooms; thin boundaries separate cells of one room. Derive these edges from the case data, retain labels after placement and reserve room for two-line labels on mobile. See the follow-up review in docs/playable-demo-20260913.md.

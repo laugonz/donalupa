@@ -10,6 +10,7 @@ COPY = json.loads((ROOT / 'content/demo-copy.json').read_text())
 PUZZLE = json.loads((ROOT / 'content/demo-case.json').read_text())
 START, END = '<!-- case-demo:start -->', '<!-- case-demo:end -->'
 people = PUZZLE['suspects'] + [PUZZLE['victim']]
+zone_cells = {tuple(cell): zone['id'] for zone in PUZZLE['zones'] for cell in zone['cells']}
 
 def portrait(person):
     if person['id'] == 'case_item':
@@ -31,17 +32,27 @@ for locale, c in COPY.items():
     board = []
     for row in range(PUZZLE['size']):
         for col in range(PUZZLE['size']):
-            zone = next(z['id'] for z in PUZZLE['zones'] if [row, col] in z['cells'])
+            zone = zone_cells[(row, col)]
             room = c['rooms'][next(i for i, z in enumerate(PUZZLE['zones']) if z['id'] == zone)]
+            edges = []
+            if row == 0:
+                edges.append('cell-first-row')
+            elif zone_cells[(row - 1, col)] != zone:
+                edges.append('room-edge-top')
+            if col == 0:
+                edges.append('cell-first-column')
+            elif zone_cells[(row, col - 1)] != zone:
+                edges.append('room-edge-left')
+            cell_class = f'case-cell zone-{zone} ' + ' '.join(edges)
             scenery = next((s for s in PUZZLE['scenery'] if s['row'] == row and s['col'] == col), None)
             blocked = scenery and not scenery['occupiable']
             label = c['scenery'][scenery['key']] if scenery else c['empty']
             image = f'<img class="cell-scenery" src="/assets/demo/obj_{scenery["key"]}.png" alt="" width="64" height="64">' if scenery else ''
-            contents = f'<span class="cell-coordinate" aria-hidden="true">{row + 1}·{col + 1}</span>{image}<span class="cell-piece" data-piece></span>'
+            contents = f'<span class="cell-coordinate" aria-hidden="true">{row + 1}·{col + 1}</span>{image}<span class="cell-piece" data-piece></span><span class="cell-room" aria-hidden="true">{e(room)}</span>'
             if blocked:
-                board.append(f'<div class="case-cell is-blocked zone-{zone}" role="img" aria-label="{e(c["row"])} {row + 1}, {e(c["col"])} {col + 1}. {e(room)}. {e(label)}. {e(c["blocked"])}">{contents}</div>')
+                board.append(f'<div class="{cell_class} is-blocked" role="img" aria-label="{e(c["row"])} {row + 1}, {e(c["col"])} {col + 1}. {e(room)}. {e(label)}. {e(c["blocked"])}">{contents}</div>')
             else:
-                board.append(f'<button type="button" class="case-cell zone-{zone}" data-cell="{row},{col}" data-room="{e(room)}" data-label="{e(label)}" aria-label="{e(c["row"])} {row + 1}, {e(c["col"])} {col + 1}. {e(room)}. {e(label)}">{contents}</button>')
+                board.append(f'<button type="button" class="{cell_class}" data-cell="{row},{col}" data-room="{e(room)}" data-label="{e(label)}" aria-label="{e(c["row"])} {row + 1}, {e(c["col"])} {col + 1}. {e(room)}. {e(label)}">{contents}</button>')
     legend = ''.join(f'<span><i class="zone-{zone["id"]}" aria-hidden="true"></i>{e(c["rooms"][i])}</span>' for i, zone in enumerate(PUZZLE['zones']))
     clues = ''.join(f'<li data-clue>{e(clue)}</li>' for clue in c['clues'])
     accusations = ''.join(f'<button type="button" class="accuse-choice" data-accuse="{person["id"]}">{e(c["characters"][i])}</button>' for i, person in enumerate(PUZZLE['suspects']))
