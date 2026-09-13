@@ -19,7 +19,7 @@ Visitors can solve a free, short office mystery directly on the website before d
 
 Source case `office_002` comes from sibling `CaseGrid/ios/CaseGrid/Resources/Content/casegrid_seed.json`, native HEAD `6693b1d`. The source was unchanged locally. Web case SHA-256: `226bfc8a3b15830cdcad22496b59c1d5a88a87ca6262e66527f66b927a02d2ee`.
 
-The 13 PNGs are the app's original suspect/scenery illustrations. The lunch uses the source case's emoji. The web copy translates and clarifies the original clues. No competitor art or customer data is used.
+The 13 PNGs use the app's original suspect/scenery illustrations. The ten larger scenery images were proportionally resized to at most 256 px with transparency preserved, reducing the total demo artwork from 2,669,604 to 563,148 bytes; suspect portraits retain their original 256 px size. The lunch uses the source case's emoji. The web copy translates and clarifies the original clues. No competitor art or customer data is used.
 
 Each piece, including the lunch, occupies a different row and column. Furniture blocks its cell. Rooms constrain clues; the culprit is the single suspect sharing the lunch's room. This case does not impose a universal one-piece-per-room rule. The unique solution is accountant `[0,2]`, marketing `[1,3]`, sales `[2,1]`, lunch `[3,0]`; sales is the culprit.
 
