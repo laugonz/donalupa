@@ -26,6 +26,7 @@ class PageParser(HTMLParser):
         self.h1_count = 0
         self.canonical_count = 0
         self.links: list[str] = []
+        self.alternates: list[tuple[str, str]] = []
         self.json_ld: list[str] = []
         self.summaries: list[str] = []
         self._json_parts: list[str] | None = None
@@ -37,6 +38,8 @@ class PageParser(HTMLParser):
             self.h1_count += 1
         if tag == "link" and values.get("rel") == "canonical":
             self.canonical_count += 1
+        if tag == "link" and values.get("rel") == "alternate" and values.get("hreflang"):
+            self.alternates.append((values["hreflang"] or "", values.get("href") or ""))
         if tag in {"a", "link"} and values.get("href"):
             self.links.append(values["href"] or "")
         if tag in {"img", "script"} and values.get("src"):
@@ -110,6 +113,8 @@ def main() -> None:
             schema_questions = faq_names(documents)
             if schema_questions != parser.summaries:
                 failures.append(f"{page.relative_to(ROOT)}: visible FAQ and JSON-LD differ")
+        elif ("x-default", "https://donalupa.com/") in parser.alternates:
+            failures.append(f"{page.relative_to(ROOT)}: guide x-default points to homepage")
 
         for raw_link in parser.links:
             target = local_target(raw_link)
