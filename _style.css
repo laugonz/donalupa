@@ -71,6 +71,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 h1, h2, h3, p { text-wrap: pretty; }
 h1, h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-weight: 700; letter-spacing: -.055em; line-height: .94; }
 h1 { font-size: clamp(4.2rem,8vw,7.5rem); }
+.hero h1 { font-size: clamp(3.1rem,5.6vw,5.7rem); }
 h1 em { color: var(--orange); font-weight: inherit; }
 h2 { font-size: clamp(3rem,5.6vw,5.8rem); }
 h3 { margin: 0; font-size: 1.2rem; line-height: 1.25; letter-spacing: -.025em; }
@@ -267,6 +268,8 @@ h3 { margin: 0; font-size: 1.2rem; line-height: 1.25; letter-spacing: -.025em; }
 .related-grid span { color: var(--orange-dark); font-size: .68rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
 .related-grid strong { max-width: 540px; margin-top: 24px; font: 700 clamp(1.65rem,3.2vw,2.55rem)/1.08 Georgia, serif; letter-spacing: -.04em; }
 .related-grid small { margin-top: auto; color: var(--ink-soft); font-size: .75rem; font-weight: 900; text-transform: uppercase; }
+.guide-translations { margin-top: 24px; color: var(--ink-soft); line-height: 1.8; }
+.guide-translations a { color: var(--ink); text-underline-offset: 3px; }
 
 @media (max-width: 900px) {
   .hero { min-height: 0; grid-template-columns: 1fr; padding-top: 64px; }
@@ -305,6 +308,7 @@ h3 { margin: 0; font-size: 1.2rem; line-height: 1.25; letter-spacing: -.025em; }
   .site-header nav > .language-link { display: block; }
   .hero { padding-block: 48px 60px; }
   h1 { font-size: clamp(3.75rem,18vw,5.6rem); }
+  .hero h1 { font-size: clamp(2.75rem,11vw,4.1rem); }
   h2 { font-size: clamp(2.8rem,13vw,4.3rem); }
   .hero-lead { font-size: 1.02rem; }
   .cta-row { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr); }
@@ -337,10 +341,6 @@ h3 { margin: 0; font-size: 1.2rem; line-height: 1.25; letter-spacing: -.025em; }
   .article-cta .button { width: 100%; }
   .related-guides { padding-bottom: 90px; }
   .related-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 680px) {
-  html[lang="es"] .hero h1 { font-size: clamp(2.8rem, 11.8vw, 4.2rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {

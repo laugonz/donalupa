@@ -93,6 +93,7 @@ def faq_names(documents: list[dict]) -> list[str]:
 
 def main() -> None:
     failures: list[str] = []
+    page_alternates: dict[Path, dict[str, str]] = {}
     for page in sorted(ROOT.rglob("index.html")):
         parser = PageParser()
         parser.feed(page.read_text(encoding="utf-8"))
@@ -115,6 +116,9 @@ def main() -> None:
                 failures.append(f"{page.relative_to(ROOT)}: visible FAQ and JSON-LD differ")
         elif ("x-default", "https://donalupa.com/") in parser.alternates:
             failures.append(f"{page.relative_to(ROOT)}: guide x-default points to homepage")
+        if len(parser.alternates) != len(dict(parser.alternates)):
+            failures.append(f"{page.relative_to(ROOT)}: duplicate hreflang")
+        page_alternates[page] = dict(parser.alternates)
 
         for raw_link in parser.links:
             target = local_target(raw_link)
@@ -124,14 +128,31 @@ def main() -> None:
                 )
 
     sitemap = ElementTree.parse(ROOT / "sitemap.xml")
-    namespace = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-    for node in sitemap.findall("sm:url/sm:loc", namespace):
-        path = urlparse(node.text or "").path
+    namespace = {
+        "sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
+        "xhtml": "http://www.w3.org/1999/xhtml",
+    }
+    for entry in sitemap.findall("sm:url", namespace):
+        node = entry.find("sm:loc", namespace)
+        path = urlparse(node.text or "").path if node is not None else ""
         target = ROOT / path.lstrip("/")
         if path.endswith("/"):
             target /= "index.html"
         if not target.exists():
             failures.append(f"sitemap.xml: missing target {path}")
+        alternates = {
+            link.get("hreflang", ""): link.get("href", "")
+            for link in entry.findall("xhtml:link", namespace)
+        }
+        if len(alternates) >= 5 and any(segment in path for segment in ("/guides/", "/guias/", "/guide/")):
+            if page_alternates.get(target) != alternates:
+                failures.append(f"sitemap.xml: hreflang differs from HTML for {path}")
+            for code, url in alternates.items():
+                if code != "x-default":
+                    peer_path = urlparse(url).path
+                    peer = ROOT / peer_path.lstrip("/") / "index.html"
+                    if page_alternates.get(peer) != alternates:
+                        failures.append(f"sitemap.xml: hreflang is not reciprocal for {path} → {peer_path}")
 
     if failures:
         raise SystemExit("\n".join(f"ERROR: {failure}" for failure in failures))
